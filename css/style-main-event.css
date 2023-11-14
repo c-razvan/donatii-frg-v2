@@ -1,0 +1,50 @@
+.main-event {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.text-container h1 {
+  font-weight: 500;
+}
+
+.text-container p {
+  font-weight: 200;
+}
+
+.line-container-spacer {
+  height: 10%;
+  position: relative;
+  right: 120px;
+}
+
+.event-line {
+  background-color: red;
+  height: 8px;
+  width: 150px;
+  border-radius: 10px 0 10px 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .line-container-spacer {
+    right: 0;
+  }
+  .text-container {
+    margin: 1rem;
+    align-items: start;
+  }
+  .img-container {
+    padding: 1rem;
+  }
+  .main-event {
+    flex-direction: column;
+  }
+}

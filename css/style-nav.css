@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Foco";
+  src: url(./Fonts/Foco_Rg.ttf);
+}
+
+@font-face {
+  font-family: "Foco-Bold";
+  src: url(./Fonts/Foco-Bold.ttf);
+}
+
+body {
+  font-family: "Foco", sans-serif;
+}
+
+nav {
+  box-shadow: 0px 1px 20px rgb(183, 183, 183);
+  z-index: 1;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.logo {
+  object-fit: contain;
+  width: 100px;
+  margin: 10px;
+}
+
+.list-nav {
+  float: right;
+  text-align: right;
+  margin-top: -0.5rem;
+}
+
+.nav-line {
+  margin: 1rem;
+  height: 4px;
+  border-radius: 40px 0 0 0;
+}
+
+.nav-line:hover {
+  box-shadow: 0px 20px #0083c4;
+  transition: box-shadow 0.05s;
+}
+
+.tab {
+  color: #0050a9;
+  text-decoration: none;
+}

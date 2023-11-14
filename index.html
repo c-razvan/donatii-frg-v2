@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Federația Română de Gimnastică</title>
+
+    <!-- Style -->
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./css/style-nav.css" />
+    <link rel="stylesheet" href="./css/style-main-event.css" />
+
+    <!-- Scripts -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script defer src="./scripts/nav-bar-element.js"></script>
+  </head>
+  <body>
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container" id="nav-container">
+        <a class="logo-link" href="index.html" id="logo-container"></a>
+
+        <button id="collapse-button"></button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto list-nav" id="navbar-nav"></ul>
+        </div>
+      </div>
+    </nav>
+    <!--Main-->
+    <div class="main-event container p-0 mt-3">
+      <div class="img-container">
+        <img
+          class="img-fluid"
+          src="./assets/Main-Photo.jpeg"
+          alt="Main Event"
+        />
+      </div>
+
+      <div class="text-container">
+        <div class="line-container-spacer mb-3">
+          <div class="event-line"></div>
+        </div>
+        <h1>Donează pentru Federația Română de Gimnastică!</h1>
+        <p>
+          Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune.
+          Avem nevoie de tine, pentru ca toți copiii legitimați la FRG să aibă
+          parte de un drum cât mai lin în pașii lor pentru îndeplinirea visului
+          de a deveni viitori campioni în gimnastica de performanță.
+        </p>
+      </div>
+    </div>
+    <!--Butoane Donatii-->
+    <div class="container butoane-donatii"></div>
+  </body>
+</html>
