@@ -15,6 +15,7 @@
 
     <script defer src="./scripts/bootstrap.js"></script>
     <script defer src="./scripts/nav-bar-element.js"></script>
+    <script defer src="./scripts/carusel-elements.js"></script>
   </head>
   <body>
     <!-- NavBar-->
@@ -30,29 +31,29 @@
       </div>
     </nav>
     <!--Main-->
-    <div class="main-event container p-0 mt-3">
-      <div class="img-container">
-        <img
-          class="img-fluid"
-          src="./assets/Main-Photo.jpeg"
-          alt="Main Event"
-        />
-      </div>
-
-      <div class="text-container">
-        <div class="line-container-spacer mb-3">
-          <div class="event-line"></div>
-        </div>
-        <h1>Donează pentru Federația Română de Gimnastică!</h1>
-        <p>
-          Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune.
-          Avem nevoie de tine, pentru ca toți copiii legitimați la FRG să aibă
-          parte de un drum cât mai lin în pașii lor pentru îndeplinirea visului
-          de a deveni viitori campioni în gimnastica de performanță.
-        </p>
+    <div class="container">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner" id="main-container"></div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
     <!--Butoane Donatii-->
-    <div class="container butoane-donatii"></div>
   </body>
 </html>

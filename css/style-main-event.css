@@ -3,6 +3,7 @@
   width: 100%;
   height: auto;
   display: flex;
+  max-height: 650px;
 }
 
 .text-container {
@@ -14,16 +15,18 @@
 
 .text-container h1 {
   font-weight: 500;
+  width: 700px;
 }
 
 .text-container p {
   font-weight: 200;
+  width: 700px;
 }
 
 .line-container-spacer {
   height: 10%;
   position: relative;
-  right: 120px;
+  right: 0;
 }
 
 .event-line {
@@ -31,6 +34,30 @@
   height: 8px;
   width: 150px;
   border-radius: 10px 0 10px 0;
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .main-event {
+    height: 420px;
+  }
+
+  .text-container h1 {
+    width: 350px;
+  }
+
+  .text-container p {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+  .text-container h1 {
+    width: 550px;
+  }
+
+  .text-container p {
+    width: 550px;
+  }
 }
 
 @media only screen and (max-width: 990px) {
