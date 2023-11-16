@@ -1,0 +1,41 @@
+.butoane-donatii {
+  width: 100%;
+}
+
+.butoane-donatii-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  width: 30%;
+}
+
+.button-text {
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.button-text a {
+  text-decoration: none;
+  color: #0050a9;
+}
+
+@media screen and (max-width: 990px) {
+  .butoane-donatii-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+  }
+}
