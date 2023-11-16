@@ -1,10 +1,15 @@
 let elements = {
   photo: ["Main-Photo.jpeg", "20.png"],
-  title: ["", "Direcționează 20% Din Impozitul Pe Profit"],
+  line: ["red", "blue"],
+  title: [
+    "Donează pentru Federația Română de Gimnastică!",
+    "Direcționează 20% Din Impozitul Pe Profit",
+  ],
   paragraf: [
-    "",
+    "Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune. Avem nevoie de tine, pentru ca toți copiii legitimați la FRG să aibă parte de un drum cât mai lin în pașii lor pentru îndeplinirea visului de a deveni viitori campioni în gimnastica de performanță.",
     "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! Împreună susținem efortul colectiv de reconstrucție a gimnasticii românești. Dacă iubești gimnastica și îți dorești să te alături proiectelor noastre, cu siguranță contribuția ta va aduce un aport pozitiv în procesul de redresare și ocrotire a sportivilor generației de astăzi și de mâine! ",
   ],
+  link: ["", "https://frgimnastica.com"],
 };
 
 for (let i = 0; i < elements.title.length; i++) {
@@ -42,7 +47,20 @@ for (let i = 0; i < elements.title.length; i++) {
   lineContainer.setAttribute("class", "line-container-spacer mb-3");
 
   let line = document.createElement("div");
-  line.setAttribute("class", "event-line");
+
+  switch (elements.line[i]) {
+    case "blue":
+      line.setAttribute("class", "event-line event-line-blue");
+      break;
+    case "yellow":
+      line.setAttribute("class", "event-line event-line-yellow");
+      break;
+    case "red":
+      line.setAttribute("class", "event-line event-line-red");
+      break;
+    default:
+      line.setAttribute("class", "event-line event-line-red");
+  }
 
   lineContainer.appendChild(line);
   textContainer.appendChild(lineContainer);
@@ -51,15 +69,22 @@ for (let i = 0; i < elements.title.length; i++) {
 
   let title = document.createElement("h1");
   title.innerHTML = elements.title[i];
-
   textContainer.appendChild(title);
 
   // paragraf
 
   let paragraf = document.createElement("p");
   paragraf.innerHTML = elements.paragraf[i];
-
   textContainer.appendChild(paragraf);
+
+  // link
+  let link = document.createElement("a");
+  link.innerHTML = "Aflați mai multe";
+  link.setAttribute("class", "link-carousel");
+  if (elements.link[i] !== "") {
+    link.setAttribute("href", `${elements.link[i]}`);
+    textContainer.appendChild(link);
+  }
 
   // Append
 
