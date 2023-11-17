@@ -16,6 +16,11 @@ body {
   font-family: "Foco", sans-serif;
 }
 
+.background {
+  background-color: white;
+  height: 100vh;
+}
+
 .donate-button {
   display: none;
 }
