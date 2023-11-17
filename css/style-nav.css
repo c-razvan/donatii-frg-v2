@@ -14,6 +14,11 @@
 
 body {
   font-family: "Foco", sans-serif;
+  background-color: #0083c4;
+}
+
+.background {
+  background-color: white;
 }
 
 .donate-button {
