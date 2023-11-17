@@ -23,7 +23,7 @@ body {
 @media only screen and (max-width: 990px) {
   .donate-button {
     display: block;
-    background-color: red;
+    background-color: #0083c4;
     height: 24px;
     width: 100%;
     text-align: center;
