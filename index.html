@@ -19,45 +19,55 @@
     <script defer src="./scripts/carusel-elements.js"></script>
   </head>
   <body>
-    <!-- NavBar-->
-    <header class="navbar navbar-expand-lg">
-      <!--Donate-->
-      <div class="donate-button"><a href="#">DONEAZĂ</a></div>
-      <div class="container" id="nav-container">
-        <a class="logo-link" href="index.html" id="logo-container"></a>
+    <section style="background-color: #0083c4">
+      <section style="background-color: white">
+        <!--Donate-->
+        <div class="donate-button"><a href="#">DONEAZĂ</a></div>
+        <!-- NavBar-->
+        <header class="navbar navbar-expand-lg">
+          <div class="container" id="nav-container">
+            <a class="logo-link" href="index.html" id="logo-container"></a>
 
-        <button id="collapse-button"></button>
+            <button id="collapse-button"></button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto list-nav" id="navbar-nav"></ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto list-nav" id="navbar-nav"></ul>
+            </div>
+          </div>
+        </header>
+        <!--Main-->
+        <div class="container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="main-container"></div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
-    <!--Main-->
-    <div class="container">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner" id="main-container"></div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <!--Butoane Donatii-->
-    <!--Altceva-->
+        <!--Butoane Donatii-->
+        <!--Altceva-->
+      </section>
+    </section>
   </body>
 </html>
