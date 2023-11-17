@@ -16,6 +16,25 @@ body {
   font-family: "Foco", sans-serif;
 }
 
+.donate-button {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .donate-button {
+    display: block;
+    background-color: red;
+    height: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .donate-button a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 nav {
   box-shadow: 0px 1px 20px rgb(183, 183, 183);
   z-index: 1;

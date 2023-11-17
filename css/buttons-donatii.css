@@ -1,41 +1,78 @@
-.butoane-donatii {
-  width: 100%;
-}
-
-.butoane-donatii-container {
+.cards-container {
+  height: 250px;
   display: flex;
   justify-content: space-between;
+  background-color: rgb(240, 240, 240);
 }
 
-.button {
-  background-color: rgb(255, 255, 255);
-  height: 100px;
+.card-container {
   width: 30%;
-}
-
-.button-text {
-  height: 50px;
-  color: white;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
 }
 
-.button-text a {
-  text-decoration: none;
-  color: #0050a9;
+.card {
+  width: 80%;
+  height: 80%;
+  border: 0px solid;
 }
 
-@media screen and (max-width: 990px) {
-  .butoane-donatii-container {
-    display: flex;
-    flex-direction: column;
-  }
+.card-b {
+  box-shadow: -5px 5px #0083c450;
+  transition: box-shadow, 1s;
+}
 
-  .button {
-    background-color: rgb(255, 255, 255);
-    height: 100px;
-    width: 100%;
-  }
+.card-b:hover {
+  box-shadow: -15px 15px #0083c450;
+  transition: box-shadow, 1s;
+}
+
+.card-y {
+  box-shadow: -5px 5px #ff980050;
+  transition: box-shadow, 1s;
+}
+
+.card-y:hover {
+  box-shadow: -15px 15px #ff980050;
+  transition: box-shadow, 1s;
+}
+
+.card-r {
+  box-shadow: -5px 5px #ff164550;
+  transition: box-shadow, 1s;
+}
+
+.card-r:hover {
+  box-shadow: -15px 15px #ff164550;
+  transition: box-shadow, 1s;
+}
+
+.title-container {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  color: white;
+}
+
+.content-container {
+  background-color: black;
+  font-size: 18px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  color: white;
+  height: 25%;
+  text-align: center;
 }

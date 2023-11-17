@@ -1,15 +1,15 @@
 let elements = {
-  photo: ["Main-Photo.jpeg", "20.png", ""],
-  line: ["red", "blue", ""],
+  photo: ["Main-Photo.jpeg", "20.png", "20.png"],
+  line: ["red", "blue", "yellow"],
   title: [
     "Donează pentru Federația Română de Gimnastică!",
     "Direcționează 20% Din Impozitul Pe Profit",
-    "",
+    "Direcționează 20% Din Impozitul Pe Profit",
   ],
   paragraf: [
     "Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune. Avem nevoie de tine, pentru ca toți copiii legitimați la FRG să aibă parte de un drum cât mai lin în pașii lor pentru îndeplinirea visului de a deveni viitori campioni în gimnastica de performanță.",
     "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! Împreună susținem efortul colectiv de reconstrucție a gimnasticii românești. Dacă iubești gimnastica și îți dorești să te alături proiectelor noastre, cu siguranță contribuția ta va aduce un aport pozitiv în procesul de redresare și ocrotire a sportivilor generației de astăzi și de mâine! ",
-    "",
+    "Nostaligia Party",
   ],
   link: ["", "https://frgimnastica.com", ""],
 };
