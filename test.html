@@ -72,23 +72,56 @@
       </div>
     </div>
     <!--Butoane-->
-    <div class="container mt-3">
-      <div class="card mt-3 event-line-red">
-        <div class="card-wrapper">
-          <span class="card-container">
-            <img
-              class="img-fluid icon"
-              src="./assets/figure.gymnastics.svg"
-              alt=""
-            />
-          </span>
+    <div align="center">
+      <h2>Donează</h2>
 
-          <div class="card-box content">
-            <p class="text">Formulare Redirecționare</p>
-          </div>
-        </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">
+          Redirecționează
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">
+          Donează
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+          Contracte
+        </button>
       </div>
+
+      <div id="London" class="tabcontent">
+        <p>Persoane Fizice</p>
+        <p>Persoane Juridice</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <p>Persoane Fizice</p>
+        <p>Persoane Juridice</p>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <p>Persoane Fizice</p>
+        <p>Persoane Juridice</p>
+      </div>
+
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
     </div>
+
     <!--Campaniile Noastre-->
     <div
       class="main-event container p-0 mt-3"
