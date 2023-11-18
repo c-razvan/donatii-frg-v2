@@ -1,0 +1,49 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.icon {
+  width: 30px;
+  margin: 0.5rem 0 0 1rem;
+}
+
+.content {
+  margin: 0.25rem 0 0 1rem;
+  display: flex;
+  align-content: center;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+}
+
+.content p {
+}
+
+.card-wrapper {
+  display: flex;
+  height: 40px;
+}
+
+.card {
+  border: 0px;
+}
+
+@media only screen and (max-width: 990px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 30px;
+    margin-top: 0.5rem;
+  }
+
+  .content {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+  }
+}
