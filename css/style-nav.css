@@ -71,7 +71,7 @@ header {
   transition: box-shadow 0.05s;
 }
 
-.tab {
+.tab-header {
   color: #0050a9;
   text-decoration: none;
 }

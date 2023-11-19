@@ -7,22 +7,26 @@ let elements = {
     "Direcționează 20% Din Impozitul Pe Profit",
   ],
   paragraf: [
-    "Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune. Avem nevoie de tine, pentru ca toți copiii legitimați la FRG să aibă parte de un drum cât mai lin în pașii lor pentru îndeplinirea visului de a deveni viitori campioni în gimnastica de performanță.",
-    "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! Împreună susținem efortul colectiv de reconstrucție a gimnasticii românești. Dacă iubești gimnastica și îți dorești să te alături proiectelor noastre, cu siguranță contribuția ta va aduce un aport pozitiv în procesul de redresare și ocrotire a sportivilor generației de astăzi și de mâine! ",
+    "Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune. Avem nevoie de tine!",
+    "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! ",
     "Nostaligia Party",
   ],
-  link: ["", "https://frgimnastica.com", ""],
+  link: ["./test.html", "https://frgimnastica.com", "./test.html"],
 };
 
 for (let i = 0; i < elements.title.length; i++) {
   // carousel
   carousel = document.createElement("div");
-  carousel.setAttribute("class", "carousel-item active");
+  carousel.setAttribute("class", "carousel-item");
+
+  if (i === 0) {
+    carousel.setAttribute("class", "carousel-item active");
+  }
 
   // carouselCard
 
   carouselCard = document.createElement("div");
-  carouselCard.setAttribute("class", "main-event container p-0 mt-3");
+  carouselCard.setAttribute("class", "main-event container p-0 mt-3 ");
   carouselCard.setAttribute("id", "main-carousel");
 
   // image
@@ -102,4 +106,4 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 setInterval(() => {
   jQuery(".carousel-control-next").trigger("click");
-}, 10000);
+}, 15000);

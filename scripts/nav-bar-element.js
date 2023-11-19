@@ -50,7 +50,7 @@ for (let i = 0; i < linkList.length; i++) {
   element.setAttribute("class", "nav-line");
 
   let link = document.createElement("a");
-  link.setAttribute("class", "fs-6 tab");
+  link.setAttribute("class", "fs-6 tab-header");
   link.setAttribute("href", `./${linkList[i]}.html`);
   link.innerHTML = `${linkList[i]}`;
 
