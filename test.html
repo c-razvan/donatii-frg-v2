@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style-main-event.css" />
     <link rel="stylesheet" href="/css/buttons-donatii.css" />
     <link rel="stylesheet" href="/css/style-main-event.css" />
+    <link rel="stylesheet" href="./css/style-footer.css" />
 
     <!-- Scripts -->
     <script defer src="./scripts/bootstrap.js"></script>
@@ -21,153 +22,35 @@
   <body>
     <!--Carousel-->
     <!--Butoane-->
-    <div class="container">
-      <div class="out-box">
-        <h2 class="contact-head">Susține Performanța</h2>
-        <button
-          type="button"
-          class="collapsible"
-          style="width: 100%; margin-top: 0.5rem"
-        >
-          Redirectionează
-        </button>
-        <div class="content" style="display: none">
-          <br />
-          <p>Hello!</p>
-          <p>Hello!</p>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>
 
     <!--Campaniile Noastre-->
-    <div
-      class="main-event container p-0 mt-3"
-      style="height: 400px; width: 100%; overflow: hidden"
-    >
-      <div class="img-container">
-        <img
-          class="img-fluid"
-          src="./assets/Main-Photo.jpeg"
-          alt="Main Event"
-        />
-      </div>
 
-      <div class="text-container">
-        <div class="line-container-spacer mb-3">
-          <div class="event-line"></div>
-        </div>
-        <h1 style="width: 700px">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </h1>
-        <p style="width: 700px">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit vero
-          alias ipsum voluptatibus sunt unde, odio labore nobis, aliquam saepe
-          dolorum tenetur omnis earum, exercitationem deserunt officiis?
-          Incidunt, alias nam.
-        </p>
-      </div>
-    </div>
-
-    <div class="container butoane-donatii mt-3">
-      <h4>Donații</h4>
-      <div style="display: flex; justify-content: space-between">
-        <div
-          style="
-            width: 30%;
-            background-color: rgb(255, 255, 255);
-            height: 200px;
-          "
-        >
-          <div
-            style="
-              width: 100%;
-              height: 50px;
-              background-color: rgb(0, 68, 128);
-              color: white;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            "
-          >
-            <h5>Redirecționează</h5>
-          </div>
-          <div>
-            <a href=""><h6 class="nav-line m-4">Persoane Fizice</h6></a>
-            <a href=""><h6 class="nav-line m-4">Persoane Fizice</h6></a>
-          </div>
-        </div>
-        <div
-          style="
-            width: 30%;
-            background-color: rgb(255, 255, 255);
-            height: 200px;
-          "
-        >
-          <div
-            style="
-              width: 100%;
-              height: 50px;
-              background-color: rgb(0, 68, 128);
-              color: white;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            "
-          >
-            <h5>Redirecționează</h5>
-          </div>
-          <div>
-            <a href=""><h6 class="nav-line m-4">Persoane Fizice</h6></a>
-            <a href=""><h6 class="nav-line m-4">Persoane Fizice</h6></a>
-          </div>
-        </div>
-        <div
-          style="
-            width: 30%;
-            background-color: rgb(255, 255, 255);
-            height: 200px;
-          "
-        >
-          <div
-            style="
-              width: 100%;
-              height: 50px;
-              background-color: rgb(0, 68, 128);
-              color: white;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            "
-          >
-            <h5>Redirecționează</h5>
-          </div>
-          <div>
-            <a href=""><h6 class="nav-line m-4">Persoane Fizice</h6></a>
-            <a href=""><h6 class="nav-line m-4">Persoane Fizice</h6></a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--Footer-->
-    <div class="container mt-3" style="background-color: black; height: 200px">
-      Date
+
+    <div class="container">
+      <div style="display: flex; justify-content: center; flex-wrap: wrap">
+        <div style="display: flex">
+          <a
+            class="footer-link"
+            href="https://www.google.com/maps/place/Strada+Vasile+Conta,+Bucure%C8%99ti/@44.4400291,26.1012945,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1ff4899fd3c67:0x461f7cad8845220!8m2!3d44.4400291!4d26.1012945!16s%2Fg%2F1tg4zy2l?entry=ttu"
+          >
+            <div class="footer-color-column"></div>
+            <p>
+              Str. Vasile Conta, nr.16 <br />
+              Bucureşti, Romania
+            </p>
+          </a>
+          <a class="footer-link" href="https://www.frgimnastica.com">
+            <div class="footer-color-column"></div>
+
+            <p>
+              M:frgimnastica@frgimnastica.com <br />
+              T: +40 213 171 112 <br />
+              www.frgimnastica.com
+            </p>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

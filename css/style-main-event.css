@@ -55,10 +55,6 @@
   width: 150px;
   padding-top: 1px;
 }
-.link-carousel:hover {
-  box-shadow: 0px 20px #0083c4;
-  transition: box-shadow, 0.05s;
-}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .text-container h1 {
