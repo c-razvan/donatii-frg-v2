@@ -2,7 +2,7 @@ let elements = {
   photo: ["Main-Photo.jpeg", "20.png", "20.png"],
   line: ["red", "blue", "yellow"],
   title: [
-    "Donează pentru Federația Română de Gimnastică!",
+    "Donează ",
     "Direcționează 20% Din Impozitul Pe Profit",
     "Direcționează 20% Din Impozitul Pe Profit",
   ],
@@ -54,19 +54,7 @@ for (let i = 0; i < elements.title.length; i++) {
 
   let line = document.createElement("div");
 
-  switch (elements.line[i]) {
-    case "blue":
-      line.setAttribute("class", "event-line event-line-blue");
-      break;
-    case "yellow":
-      line.setAttribute("class", "event-line event-line-yellow");
-      break;
-    case "red":
-      line.setAttribute("class", "event-line event-line-red");
-      break;
-    default:
-      line.setAttribute("class", "event-line event-line-red");
-  }
+  line.setAttribute("class", `event-line event-line-${elements.line[i]}`);
 
   lineContainer.appendChild(line);
   textContainer.appendChild(lineContainer);
@@ -86,7 +74,7 @@ for (let i = 0; i < elements.title.length; i++) {
   // link
   let link = document.createElement("a");
   link.innerHTML = "Aflați mai multe";
-  link.setAttribute("class", "link-carousel");
+  link.setAttribute("class", `link-carousel event-line-${elements.line[i]}`);
   if (elements.link[i] !== "") {
     link.setAttribute("href", `${elements.link[i]}`);
     textContainer.appendChild(link);

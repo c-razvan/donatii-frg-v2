@@ -20,101 +20,41 @@
 
   <body>
     <!--Carousel-->
-    <div class="container">
-      <div
-        id="carouselExample"
-        class="carousel slide pointer-event"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner" id="main-container">
-          <div class="carousel-item">
-            <div class="main-event container p-0 mt-3" id="main-carousel">
-              <div class="img-container">
-                <img class="img-fluid" src="./assets/20.png" alt="Main Event" />
-              </div>
-              <div class="text-container" id="text-container">
-                <div class="line-container-spacer mb-3">
-                  <div class="event-line event-line-yellow"></div>
-                </div>
-                <h1>Direcționează 20% Din Impozitul Pe Profit</h1>
-                <p>Nostaligia Party</p>
-                <a class="link-carousel" href="./test.html">Aflați mai multe</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
     <!--Butoane-->
-    <div class="mt-3 container button-container">
-      <h2>Susține Performanța</h2>
-
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Redirecționează')">
-          Redirecționează
+    <div class="container">
+      <div class="out-box">
+        <h2 class="contact-head">Susține Performanța</h2>
+        <button
+          type="button"
+          class="collapsible"
+          style="width: 100%; margin-top: 0.5rem"
+        >
+          Redirectionează
         </button>
-        <button class="tablinks" onclick="openCity(event, 'Donează')">
-          Donează
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'Contracte')">
-          Contracte
-        </button>
-      </div>
-      <div class="mt-3">
-        <div id="Redirecționează" class="tabcontent">
-          <p>Persoane Fizice</p>
-          <p>Persoane Juridice</p>
-        </div>
-
-        <div id="Donează" class="tabcontent">
-          <p>Persoane Fizice</p>
-          <p>Persoane Juridice</p>
-        </div>
-
-        <div id="Contracte" class="tabcontent">
-          <p>Sponsorizare în Bani</p>
-          <p>Sponsorizare în Bunuri și servicii</p>
+        <div class="content" style="display: none">
+          <br />
+          <p>Hello!</p>
+          <p>Hello!</p>
         </div>
       </div>
-
-      <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          console.log(tablinks);
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(
-              " active",
-              ""
-            );
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-      </script>
     </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
 
     <!--Campaniile Noastre-->
     <div
