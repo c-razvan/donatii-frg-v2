@@ -3,7 +3,7 @@ let buttons = [
     title: "Redirecționează",
     color: "blue",
     content: {
-      linkTitle: ["Persoane Fizice", "Persoane Juridice"],
+      linkTitle: ["3,5% - Persoane Fizice", "20% - Persoane Juridice"],
       links: ["./", "./"],
     },
   },

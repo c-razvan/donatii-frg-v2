@@ -40,11 +40,12 @@
   border: 0px;
   border-radius: 50px 0 50px 0;
   cursor: pointer;
+  height: 35px;
 }
 
 .content {
   background-color: rgb(230, 230, 230);
-  border-radius: 10px 0 10px 0;
+  border-radius: 50px 0 50px 0;
   text-align: center;
   display: none;
 }
