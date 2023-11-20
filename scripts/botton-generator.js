@@ -39,9 +39,17 @@ for (let j = 0; j < buttons.length; j++) {
   button.setAttribute("type", "button");
   button.innerHTML = `${buttons[j].title}`;
 
+  let indicator = document.createElement("img");
+  indicator.setAttribute(
+    "src",
+    "./assets/icon/arrow.uturn.down.circle.fill.svg"
+  );
+  indicator.setAttribute("class", "indicator");
+
   // content
   let content = document.createElement("div");
-  content.setAttribute("class", "content mt-3");
+  content.setAttribute("class", "content mt-3 hidden");
+  content.setAttribute("id", `${j}`);
 
   for (let h = 0; h < buttons[j].content.links.length; h++) {
     // linkContainer
@@ -57,11 +65,13 @@ for (let j = 0; j < buttons.length; j++) {
   }
 
   //append
+  button.appendChild(indicator);
   buttonContainer.appendChild(button);
   buttonContainer.appendChild(content);
   document.getElementById("buttons-container").appendChild(buttonContainer);
 }
 
+let indicator = document.getElementsByClassName("indicator");
 let coll = document.getElementsByClassName("collapsible");
 let i;
 
@@ -69,10 +79,14 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    if (content.classList.contains("hidden")) {
+      indicator[content.id].classList.add("rotate");
+      content.classList.remove("hidden");
+      content.classList.add("show");
     } else {
-      content.style.display = "block";
+      indicator[content.id].classList.remove("rotate");
+      content.classList.add("hidden");
+      content.classList.remove("show");
     }
   });
 }
