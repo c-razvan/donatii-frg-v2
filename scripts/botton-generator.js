@@ -48,7 +48,7 @@ for (let j = 0; j < buttons.length; j++) {
 
   // content
   let content = document.createElement("div");
-  content.setAttribute("class", "content mt-3 hidden");
+  content.setAttribute("class", "content mt-3 hidden-card");
   content.setAttribute("id", `${j}`);
 
   for (let h = 0; h < buttons[j].content.links.length; h++) {
@@ -79,14 +79,14 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let content = this.nextElementSibling;
-    if (content.classList.contains("hidden")) {
+    if (content.classList.contains("hidden-card")) {
       indicator[content.id].classList.add("rotate");
-      content.classList.remove("hidden");
-      content.classList.add("show");
+      content.classList.remove("hidden-card");
+      content.classList.add("show-card");
     } else {
       indicator[content.id].classList.remove("rotate");
-      content.classList.add("hidden");
-      content.classList.remove("show");
+      content.classList.add("hidden-card");
+      content.classList.remove("show-card");
     }
   });
 }

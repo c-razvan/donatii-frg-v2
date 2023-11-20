@@ -66,13 +66,13 @@
   padding-left: 10%;
 }
 
-.show {
+.show-card {
   height: 80px;
   overflow: hidden;
   transition: height, 0.5s;
 }
 
-.hidden {
+.hidden-card {
   height: 0px;
   overflow: hidden;
   transition: height, 0.5s;
@@ -99,7 +99,7 @@
     width: 100%;
   }
 
-  .hidden {
+  .hidden-card {
     margin: 0 !important;
   }
 }
