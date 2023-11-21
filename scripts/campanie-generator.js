@@ -2,7 +2,7 @@ let cardImage = [];
 let cardParagraf = [];
 let cardLink = [];
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 4; i++) {
   //col
   let col = document.createElement("div");
   col.setAttribute("class", "col");
@@ -32,7 +32,13 @@ for (let i = 0; i < 10; i++) {
 
   let paragraf = document.createElement("p");
   paragraf.innerHTML =
-    "Some quick example text to build on the card title and make up the bulk of the card's content. ";
+    `Some quick example text to build on the card title and make up the bulk of the card's content. 
+    Some quick example text to build on the card title and make up the bulk of the card's content.`;
+
+  if (paragraf.innerHTML.length > 95) {
+    paragraf.innerHTML =
+      "Some quick example text to build on the card title and make up the bulk of the card's content. ";
+  }
 
   // button
 

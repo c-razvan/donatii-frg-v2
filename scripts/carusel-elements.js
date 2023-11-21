@@ -88,8 +88,8 @@ for (let i = 0; i < elements.title.length; i++) {
   document.getElementById("main-container").appendChild(carousel);
 }
 
-var script = document.createElement("script");
-script.src = "https://code.jquery.com/jquery-3.6.3.min.js"; // Check https://jquery.com/ for the current version
+let script = document.createElement("script");
+script.src = "https://code.jquery.com/jquery-3.7.0.min.js";
 document.getElementsByTagName("head")[0].appendChild(script);
 
 setInterval(() => {
