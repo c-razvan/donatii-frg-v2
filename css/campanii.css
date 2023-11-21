@@ -20,3 +20,10 @@
   padding: 0;
   text-decoration: underline;
 }
+
+.btn-campanie:active {
+  background-color: transparent !important;
+  color: #004a6f !important;
+  padding: 0;
+  text-decoration: underline;
+}
