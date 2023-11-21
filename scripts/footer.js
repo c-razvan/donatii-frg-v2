@@ -18,8 +18,6 @@ footer = document.getElementById("footer");
 let media = document.createElement("div");
 media.setAttribute("class", "media-holder");
 
-console.log("Hello!");
-
 for (let i = 0; i < social.length; i++) {
   let holder = document.createElement("div");
   holder.setAttribute("class", "media-icon-container");

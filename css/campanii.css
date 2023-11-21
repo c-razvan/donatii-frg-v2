@@ -6,3 +6,17 @@
   background-color: rgb(240, 240, 240);
   justify-content: space-between !important;
 }
+
+.btn-campanie {
+  border: 0px solid red;
+  background-color: transparent;
+  color: #0083c4;
+  padding: 0;
+}
+
+.btn-campanie:hover {
+  background-color: transparent;
+  color: #0083c4;
+  padding: 0;
+  text-decoration: underline;
+}

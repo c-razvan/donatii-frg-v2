@@ -37,7 +37,7 @@ for (let i = 0; i < 10; i++) {
   // button
 
   let button = document.createElement("a");
-  button.setAttribute("class", "btn btn-primary link-carousel ");
+  button.setAttribute("class", "btn btn-primary btn-campanie");
   button.setAttribute("href", "#");
   button.innerHTML = "Citește mai mult";
 
