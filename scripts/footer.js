@@ -4,7 +4,7 @@ let social = [
   "linkedin-fill.svg",
 ];
 
-let icons = ["location.svg", "mail.svg", "phone.svg"];
+let icons = ["location2.svg", "mail.svg", "phone.svg"];
 let paragraf = [
   "Str. Vasile Conta, nr.16, Bucureşti, Romania",
   "frgimnastica@frgimnastica.com",
