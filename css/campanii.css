@@ -1,0 +1,8 @@
+.card {
+  border: 0px solid #0083c4 !important;
+  border-radius: 0 !important;
+  margin: 0.5rem;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+  justify-content: space-between !important;
+}
