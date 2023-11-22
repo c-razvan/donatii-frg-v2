@@ -36,7 +36,7 @@ for (let i = 0; i < elements.title.length; i++) {
 
   let photo = document.createElement("img");
   photo.setAttribute("class", "img-fluid");
-  photo.setAttribute("src", `../assets/${elements.photo[i]}`);
+  photo.setAttribute("src", `./assets/${elements.photo[i]}`);
   photo.setAttribute("alt", "Main Event");
 
   imgContainer.appendChild(photo);

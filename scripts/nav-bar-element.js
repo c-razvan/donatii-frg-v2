@@ -56,7 +56,7 @@ for (let i = 0; i < linkList.length; i++) {
   link.innerHTML = `${linkList[i]}`;
 
   if (linkList[i] === "Acasă") {
-    link.setAttribute("href", `../index.html`);
+    link.setAttribute("href", `./index.html`);
   }
 
   if (linkList[i] === "Înapoi la Site-ul FRG") {

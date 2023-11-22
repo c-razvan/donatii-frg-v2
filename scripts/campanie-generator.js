@@ -16,7 +16,7 @@ for (let i = 0; i < 4; i++) {
 
   let image = document.createElement("img");
   image.setAttribute("class", "card-img-top");
-  image.setAttribute("src", "../assets/Main-Photo.jpeg");
+  image.setAttribute("src", "./assets/Main-Photo.jpeg");
 
   // paragraf
 

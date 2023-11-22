@@ -42,7 +42,7 @@ for (let j = 0; j < buttons.length; j++) {
   let indicator = document.createElement("img");
   indicator.setAttribute(
     "src",
-    "../assets/icon/arrow.uturn.down.circle.fill.svg"
+    "./assets/icon/arrow.uturn.down.circle.fill.svg"
   );
   indicator.setAttribute("class", "indicator");
 
