@@ -52,15 +52,10 @@ for (let i = 0; i < linkList.length; i++) {
 
   let link = document.createElement("a");
   link.setAttribute("class", "fs-6 tab-header");
-  link.setAttribute("href", `./${linkList[i]}.html`);
   link.innerHTML = `${linkList[i]}`;
 
   if (linkList[i] === "Acasă") {
     link.setAttribute("href", `./index.html`);
-  }
-
-  if (linkList[i] === "Înapoi la Site-ul FRG") {
-    link.setAttribute("href", `https://frgimnastica.com`);
   }
 
   if (linkList[i] === "Știri") {
@@ -69,6 +64,22 @@ for (let i = 0; i < linkList.length; i++) {
 
   if (linkList[i] === "Evenimente") {
     link.setAttribute("href", `https://frgimnastica.com/events`);
+  }
+
+  if (linkList[i] === "Despre Noi") {
+    link.setAttribute("href", `./despre-noi.html`);
+  }
+
+  if (linkList[i] === "Întrebări") {
+    link.setAttribute("href", `./intrebari.html`);
+  }
+
+  if (linkList[i] === "Contact") {
+    link.setAttribute("href", `./contact.html`);
+  }
+
+  if (linkList[i] === "Înapoi la Site-ul FRG") {
+    link.setAttribute("href", `https://frgimnastica.com`);
   }
 
   element.appendChild(link);
