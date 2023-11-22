@@ -4,10 +4,23 @@ let social = [
   "linkedin-fill.svg",
 ];
 
+let socialLinks = [
+  "https://www.facebook.com/frgimnastica/",
+  "https://www.instagram.com/frgimnastica/",
+  "https://www.linkedin.com/company/federația-română-de-gimnastică/mycompany/",
+];
+
 let icons = ["location2.svg", "mail.svg", "phone.svg"];
+
+let iconLinks = [
+  "https://maps.app.goo.gl/bnL3EgM1XLzKwJPb8",
+  "mailto:donatii@frgimnastica.com",
+  "tel:+40 213 171 112",
+];
+
 let paragraf = [
   "Str. Vasile Conta, nr.16, Bucureşti, Romania",
-  "frgimnastica@frgimnastica.com",
+  "donatii@frgimnastica.com",
   "+40 213 171 112 ",
 ];
 
@@ -23,7 +36,7 @@ for (let i = 0; i < social.length; i++) {
   holder.setAttribute("class", "media-icon-container");
 
   let link = document.createElement("a");
-  link.setAttribute("href", `${social[i]}`);
+  link.setAttribute("href", `${socialLinks[i]}`);
 
   let image = document.createElement("img");
   image.setAttribute("src", `./assets/icon/icon-media/${social[i]}`);
@@ -49,7 +62,7 @@ locationContainer.setAttribute("class", "footer-container");
 for (let j = 0; j < icons.length; j++) {
   let locationLink = document.createElement("a");
   locationLink.setAttribute("class", "footer-link");
-  locationLink.setAttribute("href", `${icons[j]}`);
+  locationLink.setAttribute("href", `${iconLinks[j]}`);
 
   let locationIcon = document.createElement("img");
   locationIcon.setAttribute("src", `./assets/icon/${icons[j]}`);
@@ -63,3 +76,15 @@ for (let j = 0; j < icons.length; j++) {
 }
 
 footer.appendChild(locationContainer);
+
+// CopyRight
+
+let date = new Date();
+
+let copyRight = document.createElement("div");
+copyRight.style.textAlign = "center";
+copyRight.style.padding = "1rem";
+copyRight.style.backgroundColor = "rgb(240,240,240)";
+copyRight.innerHTML = `Federația Română de Gimnastică ${date.getFullYear()} - Toate drepturile rezervate`;
+
+footer.appendChild(copyRight);
