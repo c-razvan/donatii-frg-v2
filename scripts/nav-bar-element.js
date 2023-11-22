@@ -2,7 +2,7 @@
 
 let image = document.createElement("img");
 image.setAttribute("class", "logo");
-image.setAttribute("src", "./assets/Logo-FRG.svg");
+image.setAttribute("src", "../assets/Logo-FRG.svg");
 image.setAttribute("alt", "Logo frgimnastica");
 
 document.getElementById("logo-container").appendChild(image);
@@ -40,7 +40,7 @@ let linkList = [
   "Acasă",
   "Știri",
   "Evenimente",
-  "Despre",
+  "Despre Noi",
   "Întrebări",
   "Contact",
 ];
@@ -51,7 +51,7 @@ for (let i = 0; i < linkList.length; i++) {
 
   let link = document.createElement("a");
   link.setAttribute("class", "fs-6 tab-header");
-  link.setAttribute("href", `./${linkList[i]}.html`);
+  link.setAttribute("href", `../static-pages/${linkList[i]}.html`);
   link.innerHTML = `${linkList[i]}`;
 
   if (linkList[i] === "Acasă") {
