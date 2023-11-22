@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/campanii.css" />
 
     <!-- Scripts -->
-
+    <script defer src="../scripts/mobile-bar.js"></script>
     <script defer src="../scripts/bootstrap.js"></script>
     <script defer src="../scripts/nav-bar-element.js"></script>
     <script defer src="../scripts/carusel-elements.js"></script>
@@ -26,7 +26,7 @@
   </head>
   <body>
     <!--Donate-->
-    <div class="donate-button"><a href="#sustine">Despre Noi</a></div>
+    <div id="donate-button"></div>
     <!-- NavBar-->
     <header class="navbar navbar-expand-lg">
       <div class="container" id="nav-container">
@@ -40,29 +40,6 @@
       </div>
     </header>
     <!--Main-->
-    <div class="container">
-      <div id="carouselExample" class="carousel slide pointer-event">
-        <div class="carousel-inner" id="main-container"></div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
     <!--Butoane Donatii-->
     <div class="container mt-3">
       <div class="out-box">
@@ -71,13 +48,7 @@
       </div>
     </div>
     <!--Campaniile Noastre-->
-    <div class="container mt-3">
-      <h4 class="contact-head">Campaniile Noastre</h4>
-      <div
-        class="card-group row row-cols-1 row-cols-md-4 g-4"
-        id="card-group"
-      ></div>
-    </div>
+
     <!--Footer-->
     <footer class="container mt-5" id="footer"></footer>
   </body>

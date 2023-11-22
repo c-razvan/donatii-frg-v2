@@ -43,6 +43,7 @@ let linkList = [
   "Despre Noi",
   "Întrebări",
   "Contact",
+  "Înapoi la Site-ul FRG",
 ];
 
 for (let i = 0; i < linkList.length; i++) {
@@ -55,6 +56,10 @@ for (let i = 0; i < linkList.length; i++) {
   link.innerHTML = `${linkList[i]}`;
 
   if (linkList[i] === "Acasă") {
+    link.setAttribute("href", `../index.html`);
+  }
+
+  if (linkList[i] === "Înapoi la Site-ul FRG") {
     link.setAttribute("href", `https://frgimnastica.com`);
   }
 
