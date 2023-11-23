@@ -5,11 +5,10 @@
   flex-wrap: wrap;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add light shadow */
-  transition: box-shadow 0.3s ease-in-out; /* Add transition for a smooth effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect to make the shadow a bit darker on hover */
 .despre-noi:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -32,7 +31,7 @@
 }
 
 .despre-noi img {
-  width: 25%;
+  max-width: 250px;
   border-radius: 200px;
 }
 
@@ -43,8 +42,8 @@
   flex-wrap: wrap;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add light shadow */
-  transition: box-shadow 0.3s ease-in-out; /* Add transition for a smooth effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
   flex-direction: column;
 }
 
@@ -54,7 +53,7 @@
 
 .echipa {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .echipa .person {
@@ -62,17 +61,6 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 250px;
-}
-
-.echipa .person img {
-  width: 100%;
-  border-radius: 300px;
-}
-
-@media only screen and (max-width: 370px) {
-  .echipa {
-    grid-template-columns: 1fr;
-  }
 }
 
 .col {
@@ -99,5 +87,11 @@
   
     .col {
       padding: 0 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .echipa {
+      grid-template-columns: 1fr;
     }
   }

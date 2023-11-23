@@ -23,7 +23,7 @@ for (let i = 0; i < team.length; i++) {
   //imagine
 
   let imaginePersoana = document.createElement("img");
-  imaginePersoana.setAttribute("class", "image-fluid");
+  imaginePersoana.setAttribute("class", "image-fluid rounded-circle w-100");
   imaginePersoana.src = `./assets/assets-static/${team[i].photo}`;
   imaginePersoana.alt = "";
 

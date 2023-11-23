@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0083c4" />
     <title>Federația Română de Gimnastică</title>
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Style -->
 
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style-nav.css" />
+    <link rel="stylesheet" href="./css/style-main-event.css" />
     <link rel="stylesheet" href="./css/buttons-donatii.css" />
     <link rel="stylesheet" href="./css/style-footer.css" />
+    <link rel="stylesheet" href="./css/campanii.css" />
+    <link rel="stylesheet" href="./css/static-pages/despre-noi.css" />
 
     <!-- Scripts -->
-    <script defer src="./scripts/mobile-bar.js"></script>
+
     <script defer src="./scripts/bootstrap.js"></script>
     <script defer src="./scripts/nav-bar-element.js"></script>
     <script defer src="./scripts/botton-generator.js"></script>
     <script defer src="./scripts/footer.js"></script>
+    <script defer src="./scripts/static scripts/echipa-generator.js"></script>
+    <script defer src="./scripts/static scripts/disciplina.js"></script>
   </head>
   <body>
     <!--Donate-->
-    <div id="donate-button"></div>
+    <div class="donate-button"><a href="#">TEST</a></div>
     <!-- NavBar-->
     <header class="navbar navbar-expand-lg">
       <div class="container" id="nav-container">
-        <a class="logo-link" href="./index.html" id="logo-container"></a>
+        <a class="logo-link" href="index.html" id="logo-container"></a>
 
         <button id="collapse-button"></button>
 
@@ -35,17 +40,101 @@
         </div>
       </div>
     </header>
-    <!--Main-->
-    Despre Noi
-    <!--Butoane Donatii-->
+    <!--Alătură-te cauzelor noastre!-->
     <div class="container mt-3">
+      <div class="despre-noi">
+        <h1 class="text-center my-5">Alătură-te cauzelor noastre!</h1>
+        <div>
+          <p>
+            Federația Română de Gimnastică este singura entitate sportivă
+            autorizată să organizeze, gestioneze și dezvolte activitatea
+            gimnasticii de pe teritoriul României. Cu o vechime de 115 ani,
+            Federația Română de Gimnastică este cea mai medaliată entitate
+            sportivă din România, gimnastica devenind astfel, un brand național.
+          </p>
+          <p class="mb-5">
+            Dacă și tu vrei să contribui la dezvoltarea gimnasticii Romanesti,
+            te invităm să ni te alături!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Misiune-->
+    <div class="container mt-3">
+      <div class="despre-noi text-center">
+        <h2 class="mb-3 mt-5 ms-5 me-5">Misiune</h2>
+        <p class="mb-5">
+          Federația Română de Gimnastică se dedică dezvoltării gimnasticii, în
+          toate disciplinele sale, incurajând și sprijinind implicarea
+          personală, dezvoltarea personală și succesul personal al tuturor
+          membrilor familiei gimnasticii românești, punând bazele dezvoltării
+          noilor generații de sportivi, antrenori, arbitri, cadre tehnice și
+          manageri administrativi, pentru asigurarea continuității și creșterii
+          prestigiului acumulat de-a lungul existentei sale.
+        </p>
+      </div>
+    </div>
+    <!--Centre de pregătire-->
+    <div class="container mt-3">
+      <div class="despre-noi text-center">
+        <h2 class="mb-3 mt-5 ms-5 me-5">Centre de pregătire</h2>
+        <p class="mb-5">
+          Federația Română de Gimnastică susține anual în pregătire loturile
+          reprezentative ale României în toate disciplinile sportive. Costurile
+          minimale anual sunt de cca. 2.000.000 de EURO acoperind necesitățile
+          fundamentale. Pentru atingerea înaltei perfomanțe, nevoia de susținere
+          incluzând schimbul de experiență în perioadele de pregătire și
+          verificare conduc la dublarea nevoii de finanțare.
+        </p>
+      </div>
+    </div>
+    <!--Citat-->
+    <div class="container mt-3">
+      <div class="despre-noi">
+        <h4 class="text-center mb-3 mt-5 ms-5 me-5">
+          "Împreună repunem România pe harta gimnasticii mondiale! Haideți
+          împreună să arătăm lumii că
+        </h4>
+        <h1><strong>ROMÂNIA POATE!"</strong></h1>
+        <div class="m-3">
+          <img
+            class="image-fluid"
+            src="./assets/assets-static/carmen.jpg"
+            alt=""
+          />
+        </div>
+        <p class="text-center mb-5">
+          <span class="display-6">Carmencita Constantin</span><br />
+          Președinte al Federației Române de Gimnastică
+        </p>
+      </div>
+    </div>
+    <!--Echipa-->
+    <div class="container mt-3">
+      <div class="echipa-container">
+        <h2 class="text-center mt-5">Echipa noastră de fundraising</h2>
+        <div class="echipa mb-5" id="echipa"></div>
+      </div>
+    </div>
+    <!--Discipline-->
+    <div class="container mt-3">
+      <div class="echipa-container text-center">
+        <h2 class="mt-5">Disciplinele Gimnasticii</h2>
+        <div
+        class="row row-cols-md-3 g-4 m-4"
+        id="card-group"
+      ></div>
+      <div class="mb-5"></div>
+      </div>
+    </div>
+    <!--Butoane Donatii-->
+    <div class="container mt-5">
       <div class="out-box">
-        <h4 class="contact-head" id="sustine">Susține Performanța</h4>
+        <h4 class="contact-head">Susține Performanța</h4>
         <div class="buttons-container" id="buttons-container"></div>
       </div>
     </div>
     <!--Campaniile Noastre-->
-
     <!--Footer-->
     <footer class="container mt-5" id="footer"></footer>
   </body>
