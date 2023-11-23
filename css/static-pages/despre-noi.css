@@ -9,51 +9,94 @@
   transition: box-shadow 0.3s ease-in-out; /* Add transition for a smooth effect */
 }
 
-
 /* Hover effect to make the shadow a bit darker on hover */
 .despre-noi:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .despre-noi div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
 }
 
 .despre-noi p {
-    width: 75%;
+  width: 75%;
 }
 
 .despre-noi h2 {
-    width: 100%;
+  width: 100%;
 }
 
 .despre-noi img {
-    width: 20%;
-    border-radius: 200px;
+  width: 25%;
+  border-radius: 200px;
+}
+
+.echipa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add light shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Add transition for a smooth effect */
+}
+
+.echipa-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.echipa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem;
+}
+
+.echipa .person {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.echipa .person img {
+  width: 100%;
+  border-radius: 300px;
 }
 
 @media only screen and (max-width: 990px) {
-    .despre-noi p {
-        width: 95%;
-    }
+  .despre-noi img {
+    width: 30%;
+    border-radius: 200px;
+  }
+
+  .despre-noi p {
+    width: 90%;
+  }
+  .echipa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.echipa{
-    display: flex;
-    flex-direction: row !important;
+@media only screen and (max-width: 370px) {
+  .echipa {
+    grid-template-columns: 1fr;
+  }
 }
 
-.echipa .person{
-    width: 25%;
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.echipa .person img{
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+@media only screen and (max-width: 768px) {
+  .col .disciplina {
+    margin: 0.5rem 0.5rem;
+  }
 }
