@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/static-pages/despre-noi.css" />
 
     <!-- Scripts -->
-
+    <script defer src="./scripts/mobile-bar.js"></script>
     <script defer src="./scripts/bootstrap.js"></script>
     <script defer src="./scripts/nav-bar-element.js"></script>
     <script defer src="./scripts/botton-generator.js"></script>
@@ -27,7 +27,7 @@
   </head>
   <body>
     <!--Donate-->
-    <div class="donate-button"><a href="#">TEST</a></div>
+    <div id="donate-button"></div>
     <!-- NavBar-->
     <header class="navbar navbar-expand-lg">
       <div class="container" id="nav-container">
@@ -120,11 +120,8 @@
     <div class="container mt-3">
       <div class="echipa-container text-center">
         <h2 class="mt-5">Disciplinele Gimnasticii</h2>
-        <div
-        class="row row-cols-md-3 g-4 m-4"
-        id="card-group"
-      ></div>
-      <div class="mb-5"></div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-4" id="card-group"></div>
+        <div class="mb-5"></div>
       </div>
     </div>
     <!--Butoane Donatii-->
