@@ -97,9 +97,3 @@
   align-items: center;
   padding: 0 2rem;
 }
-
-@media only screen and (max-width: 768px) {
-  .col .disciplina {
-    margin: 0.5rem;
-  }
-}
