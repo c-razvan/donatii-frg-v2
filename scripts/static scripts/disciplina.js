@@ -1,4 +1,4 @@
-let cardDisciplina = ["GAF","GAM","AER","TRA","ACRO","PK","GFA"];
+let cardDisciplina = ["GAF","GAM","AER","TRA","ACRO","PK","GfA"];
 
 let linkDisciplina = ["https://frgimnastica.com/disciplines?disciplineId=3","https://frgimnastica.com/disciplines?disciplineId=4","https://frgimnastica.com/disciplines?disciplineId=5","https://frgimnastica.com/disciplines?disciplineId=6","https://frgimnastica.com/disciplines?disciplineId=7","https://frgimnastica.com/disciplines?disciplineId=9","https://frgimnastica.com/disciplines?disciplineId=8"];
 
