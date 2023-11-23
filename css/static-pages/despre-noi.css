@@ -55,7 +55,6 @@
 .echipa {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .echipa .person {
@@ -70,21 +69,6 @@
   border-radius: 300px;
 }
 
-@media only screen and (max-width: 990px) {
-  .despre-noi img {
-    width: 30%;
-    border-radius: 200px;
-  }
-
-  .despre-noi p {
-    width: 90%;
-  }
-  .echipa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media only screen and (max-width: 370px) {
   .echipa {
     grid-template-columns: 1fr;
@@ -97,3 +81,23 @@
   align-items: center;
   padding: 0 2rem;
 }
+
+@media only screen and (max-width: 990px) {
+    .despre-noi img {
+      width: 30%;
+      border-radius: 200px;
+    }
+  
+    .despre-noi p {
+      width: 90%;
+    }
+    
+    .echipa {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .col {
+      padding: 0 1rem;
+    }
+  }
