@@ -5,12 +5,11 @@ let linkDisciplina = ["https://frgimnastica.com/disciplines?disciplineId=3","htt
 for (let i = 0; i < cardDisciplina.length; i++) {
   // col
   let col = document.createElement("div");
-  col.setAttribute("class", "col");
+  col.setAttribute("class", "dis");
 
   // card
 
   let cardContainer = document.createElement("a");
-  cardContainer.setAttribute("class", "disciplina");
   cardContainer.target = "blank";
   cardContainer.href = `${linkDisciplina[i]}`
 

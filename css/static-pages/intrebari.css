@@ -26,15 +26,14 @@
   width: 75%;
 }
 
-.despre-noi h1,h2 {
+.despre-noi h2 {
   width: 100%;
 }
 
 .despre-noi img {
   max-width: 150px;
+  border-radius: 200px;
 }
-
-/* Echipa */
 
 .echipa-container {
   display: flex;
@@ -45,47 +44,53 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+  flex-direction: column;
 }
 
 .echipa-container:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.echipa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .echipa .person {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   max-width: 200px;
 }
 
-/* discipline */
-
-.dis {
+.col {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  max-width: 30%;
+  padding: 0 2rem;
 }
 
 @media only screen and (max-width: 990px) {
-
-  .dis{
-    max-width: 50%;
+    .despre-noi img {
+      border-radius: 200px;
+    }
+  
+    .despre-noi p {
+      width: 90%;
+    }
+    
+    .echipa {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .col {
+      padding: 0 1rem;
+    }
   }
 
-  .echipa .person {
-    max-width: 150px;
+  @media only screen and (max-width: 370px) {
+    .echipa {
+      grid-template-columns: 1fr;
+    }
   }
-
-  .despre-noi p {
-    width: 90%;
-  }
-
-  .col {
-    padding: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .dis{
-    max-width: 100%;
-  }
-}

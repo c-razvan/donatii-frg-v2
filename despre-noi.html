@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style-main-event.css" />
     <link rel="stylesheet" href="./css/buttons-donatii.css" />
     <link rel="stylesheet" href="./css/style-footer.css" />
-    <link rel="stylesheet" href="./css/campanii.css" />
+
     <link rel="stylesheet" href="./css/static-pages/despre-noi.css" />
 
     <!-- Scripts -->
@@ -22,6 +22,7 @@
     <script defer src="./scripts/nav-bar-element.js"></script>
     <script defer src="./scripts/botton-generator.js"></script>
     <script defer src="./scripts/footer.js"></script>
+
     <script defer src="./scripts/static scripts/echipa-generator.js"></script>
     <script defer src="./scripts/static scripts/disciplina.js"></script>
   </head>
@@ -40,10 +41,11 @@
         </div>
       </div>
     </header>
+
     <!--Alătură-te cauzelor noastre!-->
     <div class="container mt-3">
-      <div class="despre-noi">
-        <h1 class="text-center my-5">Alătură-te cauzelor noastre!</h1>
+      <div class="despre-noi text-center">
+        <h1 class="text-center my-4">Alătură-te cauzelor noastre!</h1>
         <div>
           <p>
             Federația Română de Gimnastică este singura entitate sportivă
@@ -52,7 +54,7 @@
             Federația Română de Gimnastică este cea mai medaliată entitate
             sportivă din România, gimnastica devenind astfel, un brand național.
           </p>
-          <p class="mb-5">
+          <p class="mb-4">
             Dacă și tu vrei să contribui la dezvoltarea gimnasticii Romanesti,
             te invităm să ni te alături!
           </p>
@@ -62,8 +64,8 @@
     <!--Misiune-->
     <div class="container mt-3">
       <div class="despre-noi text-center">
-        <h2 class="mb-3 mt-5 ms-5 me-5">Misiune</h2>
-        <p class="mb-5">
+        <h1 class="my-4">Misiune</h1>
+        <p class="mb-4">
           Federația Română de Gimnastică se dedică dezvoltării gimnasticii, în
           toate disciplinele sale, incurajând și sprijinind implicarea
           personală, dezvoltarea personală și succesul personal al tuturor
@@ -77,8 +79,8 @@
     <!--Centre de pregătire-->
     <div class="container mt-3">
       <div class="despre-noi text-center">
-        <h2 class="mb-3 mt-5 ms-5 me-5">Centre de pregătire</h2>
-        <p class="mb-5">
+        <h1 class="my-4">Centre de pregătire</h1>
+        <p class="mb-4">
           Federația Română de Gimnastică susține anual în pregătire loturile
           reprezentative ale României în toate disciplinile sportive. Costurile
           minimale anual sunt de cca. 2.000.000 de EURO acoperind necesitățile
@@ -90,7 +92,7 @@
     </div>
     <!--Citat-->
     <div class="container mt-3">
-      <div class="despre-noi">
+      <div class="despre-noi text-center">
         <h4 class="text-center mb-3 mt-5 ms-5 me-5">
           "Împreună repunem România pe harta gimnasticii mondiale! Haideți
           împreună să arătăm lumii că
@@ -98,32 +100,40 @@
         <h1><strong>ROMÂNIA POATE!"</strong></h1>
         <div class="m-3">
           <img
-            class="image-fluid"
+            class="image-fluid rounded-circle"
             src="./assets/assets-static/carmen.jpg"
             alt=""
           />
         </div>
         <p class="text-center mb-5">
-          <span class="display-6">Carmencita Constantin</span><br />
+          <span style="font-size: 24px;">Carmencita Constantin</span><br />
           Președinte al Federației Române de Gimnastică
         </p>
       </div>
     </div>
+
     <!--Echipa-->
     <div class="container mt-3">
       <div class="echipa-container">
-        <h2 class="text-center mt-5">Echipa noastră de fundraising</h2>
-        <div class="echipa mb-5" id="echipa"></div>
+        <h2 class="text-center mt-4 w-100">Echipa noastră de fundraising</h2>
+        <div
+          class="echipa mb-5 d-flex justify-content-center flex-wrap"
+          id="echipa"
+        ></div>
       </div>
     </div>
+
     <!--Discipline-->
     <div class="container mt-3">
       <div class="echipa-container text-center">
-        <h2 class="mt-5">Disciplinele Gimnasticii</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4 m-4" id="card-group"></div>
-        <div class="mb-5"></div>
+        <h2 class="mt-4">Disciplinele Gimnasticii</h2>
+        <div
+          class="d-flex justify-content-center flex-wrap mb-5"
+          id="card-group"
+        ></div>
       </div>
     </div>
+
     <!--Butoane Donatii-->
     <div class="container mt-5">
       <div class="out-box">
