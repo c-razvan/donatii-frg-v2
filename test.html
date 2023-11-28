@@ -12,13 +12,19 @@
     <link rel="stylesheet" href="./css/style-nav.css" />
     <link rel="stylesheet" href="./css/style-footer.css" />
     <link rel="stylesheet" href="./css/static-pages/intrebari.css" />
-
+    <link rel="stylesheet" href="./css/buttons-donatii.css" />
+    <link rel="stylesheet" href="./css/static-pages/contact.css" />
+    <style>
+      .footer-container {
+        display: none;
+      }
+    </style>
     <!-- Scripts -->
 
     <script defer src="./scripts/bootstrap.js"></script>
     <script defer src="./scripts/nav-bar-element.js"></script>
-    <script defer src="./scripts/static scripts/intrebari.js"></script>
     <script defer src="./scripts/footer.js"></script>
+    <script defer src="./scripts/botton-generator.js"></script>
   </head>
   <body>
     <!--Donate-->
@@ -35,22 +41,43 @@
         </div>
       </div>
     </header>
-    <!--QA-->
-    <div class="container mt-3">
-      <div class="QA" id="QA">
-        <h1 class="text-center my-5 w-100">Întrebări Frecvente</h1>
+    <!--Contact-->
+    <div class="container case mt-3">
+      <div class="Contact" id="Contact">
+        <h1 class="text-center my-5 w-100">Contact</h1>
+      </div>
+    </div>
+    <!--Form-->
+    <div class="container case mt-3">
+      <div class="Contact" id="Contact">
+        <h1 class="text-center my-5 w-100">Formular</h1>
+      </div>
+    </div>
+    <!--Mail-->
+    <div class="container case mt-3">
+      <div class="Contact" id="Contact">
+        <h1 class="text-center my-5 w-100">Email</h1>
+      </div>
+    </div>
+    <!--Phone-->
+    <div class="container case mt-3">
+      <div class="Contact" id="Contact">
+        <h1 class="text-center my-5 w-100">Telefon</h1>
+      </div>
+    </div>
+    <!--Adresă-->
+    <div class="container case mt-3">
+      <div class="Contact" id="Contact">
+        <h1 class="text-center my-5 w-100">Adresă</h1>
       </div>
     </div>
     <!--Bottom-->
     <div class="container mt-5">
-      <div class="QA">
-        <h5 class="text-center my-3 ms-3 me-3">
-          Ai mai multe Întrebări? <br />
-          Ne poți contacta la oricare din următoarele servicii
-        </h5>
+      <div class="out-box">
+        <h4 class="contact-head" id="sustine">Susține Performanța</h4>
+        <div class="buttons-container" id="buttons-container"></div>
       </div>
     </div>
-
     <!--Footer-->
     <footer class="container mt-3" id="footer"></footer>
   </body>
