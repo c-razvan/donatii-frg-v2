@@ -14,21 +14,17 @@
     <link rel="stylesheet" href="./css/static-pages/intrebari.css" />
     <link rel="stylesheet" href="./css/buttons-donatii.css" />
     <link rel="stylesheet" href="./css/static-pages/contact.css" />
-    <style>
-      .footer-container {
-        display: none;
-      }
-    </style>
     <!-- Scripts -->
 
     <script defer src="./scripts/bootstrap.js"></script>
     <script defer src="./scripts/nav-bar-element.js"></script>
     <script defer src="./scripts/footer.js"></script>
     <script defer src="./scripts/botton-generator.js"></script>
+    <script defer src="./scripts/static scripts/harta.js"></script>
   </head>
   <body>
     <!--Donate-->
-    <div class="donate-button"><a href="#">TEST</a></div>
+    <div class="donate-button">test</div>
     <!-- NavBar-->
     <header class="navbar navbar-expand-lg">
       <div class="container" id="nav-container">
@@ -50,7 +46,7 @@
     <!--Form-->
     <div class="container mt-3 form">
       <div class="Contact" id="Contact">
-        <h3 class="text-center mt-5 w-100">Formular</h3>
+        <h3 class="text-center mt-5 w-100 mb-0">Formular</h3>
         <div>
           <script
             type="text/javascript"
@@ -59,7 +55,7 @@
         </div>
       </div>
     </div>
-    <!--TEST-->
+    <!--Adresa-->
     <div class="container mt-3 p-0">
       <div class="case p-4 flex-column text-center">
         <h3 class="mx-4">Adresa</h3>
@@ -84,6 +80,7 @@
         </div>
       </div>
     </div>
+    <!--Telefon si Mail-->
     <div class="container text-center mt-3 p-0">
       <div class="row g-4">
         <div class="col-sm-6">
@@ -107,18 +104,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const button = document.getElementById("map-button");
-
-      button.addEventListener("click", function () {
-        content = document.getElementById("map");
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    </script>
     <!--Bottom-->
     <div class="container mt-5">
       <div class="out-box">

@@ -35,3 +35,7 @@
   height: 900px;
   overflow: hidden;
 }
+
+.footer-container {
+  display: none;
+}

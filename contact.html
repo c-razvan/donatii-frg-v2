@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0083c4" />
     <title>Federația Română de Gimnastică</title>
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Style -->
 
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style-nav.css" />
-    <link rel="stylesheet" href="./css/buttons-donatii.css" />
     <link rel="stylesheet" href="./css/style-footer.css" />
-
+    <link rel="stylesheet" href="./css/static-pages/intrebari.css" />
+    <link rel="stylesheet" href="./css/buttons-donatii.css" />
+    <link rel="stylesheet" href="./css/static-pages/contact.css" />
     <!-- Scripts -->
     <script defer src="./scripts/mobile-bar.js"></script>
     <script defer src="./scripts/bootstrap.js"></script>
     <script defer src="./scripts/nav-bar-element.js"></script>
-    <script defer src="./scripts/botton-generator.js"></script>
     <script defer src="./scripts/footer.js"></script>
+    <script defer src="./scripts/botton-generator.js"></script>
+    <script defer src="./scripts/static scripts/harta.js"></script>
   </head>
   <body>
     <!--Donate-->
@@ -26,7 +28,7 @@
     <!-- NavBar-->
     <header class="navbar navbar-expand-lg">
       <div class="container" id="nav-container">
-        <a class="logo-link" href="./index.html" id="logo-container"></a>
+        <a class="logo-link" href="index.html" id="logo-container"></a>
 
         <button id="collapse-button"></button>
 
@@ -35,18 +37,81 @@
         </div>
       </div>
     </header>
-    <!--Main-->
-    Contact
-    <!--Butoane Donatii-->
-    <div class="container mt-3">
+    <!--Contact-->
+    <div class="container case mt-3">
+      <div class="Contact" id="Contact">
+        <h1 class="text-center my-5 w-100">Contact</h1>
+      </div>
+    </div>
+    <!--Form-->
+    <div class="container mt-3 form">
+      <div class="Contact" id="Contact">
+        <h3 class="text-center mt-5 w-100">Formular de contact</h3>
+        <div>
+          <script
+            type="text/javascript"
+            src="https://form.jotform.com/jsform/213491785641361"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <!--Adresa-->
+    <div class="container mt-3 p-0">
+      <div class="case p-4 flex-column text-center">
+        <h3 class="mx-4">Adresa</h3>
+        <p>
+          Str. Vasile Conta nr. 16, Sector II, 020954 <br />
+          Bucureşti, Romania
+        </p>
+        <button type="button" class="mb-3" id="map-button">
+          Afișează Hartă
+        </button>
+        <div class="ratio ratio-16x9" id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.655618863811!2d26.09913931591433!3d44.44022597910224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff48bcf41775%3A0x4a80812fe5ae9659!2sStrada%20Vasile%20Conta%2016%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sro!2sro!4v1613145834515!5m2!1sro!2sro"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+            width="600"
+            height="350"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!--Telefon si Mail-->
+    <div class="container text-center mt-3 p-0">
+      <div class="row g-4">
+        <div class="col-sm-6">
+          <div class="case p-4">
+            <h3 class="text-center my-4 w-100">Telefon</h3>
+            <a href="tel:+40318058261" style="text-decoration: none">
+              +40318058261
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="case p-4">
+            <h3 class="text-center my-4 w-100">Email</h3>
+            <a
+              href="mailto:donatii@frgimnastica.com"
+              style="text-decoration: none"
+            >
+              donatii@frgimnastica.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bottom-->
+    <div class="container mt-5">
       <div class="out-box">
         <h4 class="contact-head" id="sustine">Susține Performanța</h4>
         <div class="buttons-container" id="buttons-container"></div>
       </div>
     </div>
-    <!--Campaniile Noastre-->
-
     <!--Footer-->
-    <footer class="container mt-5" id="footer"></footer>
+    <footer class="container mt-3" id="footer"></footer>
   </body>
 </html>
