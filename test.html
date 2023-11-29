@@ -48,29 +48,77 @@
       </div>
     </div>
     <!--Form-->
-    <div class="container case mt-3">
+    <div class="container mt-3 form">
       <div class="Contact" id="Contact">
-        <h1 class="text-center my-5 w-100">Formular</h1>
+        <h3 class="text-center mt-5 w-100">Formular</h3>
+        <div>
+          <script
+            type="text/javascript"
+            src="https://form.jotform.com/jsform/213491785641361"
+          ></script>
+        </div>
       </div>
     </div>
-    <!--Mail-->
-    <div class="container case mt-3">
-      <div class="Contact" id="Contact">
-        <h1 class="text-center my-5 w-100">Email</h1>
+    <!--TEST-->
+    <div class="container mt-3 p-0">
+      <div class="case p-4 flex-column text-center">
+        <h3 class="mx-4">Adresa</h3>
+        <p>
+          Str. Vasile Conta nr. 16, Sector II, 020954 <br />
+          Bucureşti, Romania
+        </p>
+        <button type="button" class="mb-3" id="map-button">
+          Afișează Hartă
+        </button>
+        <div class="ratio ratio-16x9" id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.655618863811!2d26.09913931591433!3d44.44022597910224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff48bcf41775%3A0x4a80812fe5ae9659!2sStrada%20Vasile%20Conta%2016%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sro!2sro!4v1613145834515!5m2!1sro!2sro"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+            width="600"
+            height="350"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
     </div>
-    <!--Phone-->
-    <div class="container case mt-3">
-      <div class="Contact" id="Contact">
-        <h1 class="text-center my-5 w-100">Telefon</h1>
+    <div class="container text-center mt-3 p-0">
+      <div class="row g-4">
+        <div class="col-sm-6">
+          <div class="case p-4">
+            <h3 class="text-center my-4 w-100">Telefon</h3>
+            <a href="tel:+40318058261" style="text-decoration: none">
+              +40318058261
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="case p-4">
+            <h3 class="text-center my-4 w-100">Email</h3>
+            <a
+              href="mailto:donatii@frgimnastica.com"
+              style="text-decoration: none"
+            >
+              donatii@frgimnastica.com
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <!--Adresă-->
-    <div class="container case mt-3">
-      <div class="Contact" id="Contact">
-        <h1 class="text-center my-5 w-100">Adresă</h1>
-      </div>
-    </div>
+    <script>
+      const button = document.getElementById("map-button");
+
+      button.addEventListener("click", function () {
+        content = document.getElementById("map");
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    </script>
     <!--Bottom-->
     <div class="container mt-5">
       <div class="out-box">
