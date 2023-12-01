@@ -21,7 +21,7 @@ fetch(jsonFilePath)
 
       //col
       let col = document.createElement("div");
-      col.setAttribute("class", "col");
+      col.setAttribute("class", "col-lg-4");
     
       // card
     
