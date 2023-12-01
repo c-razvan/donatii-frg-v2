@@ -1,20 +1,3 @@
-// get dynamic path
-
-function getScriptPath() {
-  const scriptElement = document.currentScript;
-
-  if (scriptElement) {
-    const scriptSrc = scriptElement.src;
-    return scriptSrc;
-  } else {
-    console.error("document.currentScript is not supported in this browser.");
-    return null;
-  }
-}
-
-const buttonScriptPath = getScriptPath();
-const buttonSubfolderPath = buttonScriptPath.replace(`scripts/${buttonScriptPath.split('/').pop()}`, "");
-
 // buttons
 
 let buttons = [
@@ -23,7 +6,7 @@ let buttons = [
     color: "blue",
     content: {
       linkTitle: ["3,5% - Persoane Fizice", "20% - Persoane Juridice"],
-      links: [`${buttonSubfolderPath}`, `${buttonSubfolderPath}`],
+      links: [`${navSubfolderPath}`, `${navSubfolderPath}`],
     },
   },
   {
@@ -31,7 +14,7 @@ let buttons = [
     color: "yellow",
     content: {
       linkTitle: ["Persoane Fizice", "Persoane Juridice"],
-      links: [`${buttonSubfolderPath}`, `${buttonSubfolderPath}`],
+      links: [`${navSubfolderPath}`, `${navSubfolderPath}`],
     },
   },
   {
@@ -39,7 +22,7 @@ let buttons = [
     color: "red",
     content: {
       linkTitle: ["Sponsorizare în Bani", "Sponsorizare în Bunuri și Servicii"],
-      links: [`${buttonSubfolderPath}`, `${buttonSubfolderPath}`],
+      links: [`${navSubfolderPath}`, `${navSubfolderPath}`],
     },
   },
 ];
@@ -63,7 +46,7 @@ for (let j = 0; j < buttons.length; j++) {
   let indicator = document.createElement("img");
   indicator.setAttribute(
     "src",
-    `${buttonSubfolderPath}/assets/icon/arrow.uturn.down.circle.fill.svg`
+    `${navSubfolderPath}/assets/icon/arrow.uturn.down.circle.fill.svg`
   );
   indicator.setAttribute("class", "indicator");
 

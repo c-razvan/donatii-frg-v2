@@ -32,7 +32,7 @@ fetch(jsonFilePath)
     
       let image = document.createElement("img");
       image.setAttribute("class", "card-img-top");
-      image.setAttribute("src", `./assets/campanii-img/${jsonData.Campanii[i].cardImage}`);
+      image.setAttribute("src", `${navSubfolderPath}/assets/campanii-img/${jsonData.Campanii[i].cardImage}`);
     
       // paragraf
     

@@ -39,7 +39,7 @@ for (let i = 0; i < social.length; i++) {
   link.setAttribute("href", `${socialLinks[i]}`);
 
   let image = document.createElement("img");
-  image.setAttribute("src", `./assets/icon/icon-media/${social[i]}`);
+  image.setAttribute("src", `${navSubfolderPath}/assets/icon/icon-media/${social[i]}`);
 
   link.appendChild(image);
   holder.appendChild(link);
@@ -65,7 +65,7 @@ for (let j = 0; j < icons.length; j++) {
   locationLink.setAttribute("href", `${iconLinks[j]}`);
 
   let locationIcon = document.createElement("img");
-  locationIcon.setAttribute("src", `./assets/icon/${icons[j]}`);
+  locationIcon.setAttribute("src", `${navSubfolderPath}/assets/icon/${icons[j]}`);
 
   let locationParagraf = document.createElement("p");
   locationParagraf.innerHTML = `${paragraf[j]}`;
