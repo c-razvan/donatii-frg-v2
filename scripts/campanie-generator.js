@@ -62,7 +62,7 @@ fetch(jsonFilePath)
     
       let button = document.createElement("a");
       button.setAttribute("class", "btn btn-primary btn-campanie");
-      button.setAttribute("href", `./Campanii/${jsonData.Campanii[i].cardLink}`);
+      button.setAttribute("href", `${navSubfolderPath}/campanii/${jsonData.Campanii[i].cardLink}`);
       button.innerHTML = "Citește mai mult";
     
       // append

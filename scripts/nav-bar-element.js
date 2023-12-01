@@ -14,7 +14,7 @@ function getScriptPath() {
 
 const navScriptPath = getScriptPath();
 const navSubfolderPath = navScriptPath.replace(
-  `scripts/${navScriptPath.split("/").pop()}`,
+  `/scripts/${navScriptPath.split("/").pop()}`,
   ""
 );
 
