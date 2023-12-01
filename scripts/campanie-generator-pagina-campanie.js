@@ -26,7 +26,7 @@ fetch(jsonFilePath)
       // image contanier
 
       let imageBox = document.createElement("div");
-      imageBox.setAttribute("class","imgBox")
+      imageBox.setAttribute("class", "imgBox");
 
       // image
 
@@ -37,7 +37,7 @@ fetch(jsonFilePath)
         `${navSubfolderPath}/assets/campanii-img/${jsonData.Campanii[i].cardImage}`
       );
 
-      imageBox.appendChild(image)
+      imageBox.appendChild(image);
 
       // paragraf
 
@@ -70,6 +70,13 @@ fetch(jsonFilePath)
 
       // final append
       document.getElementById("card-group").appendChild(col);
+
+      // delete current item
+
+      if (document.getElementById("main-container").attributes[2].value === `${i}`) {
+        col.setAttribute("class", "d-none");
+      } else {
+      }
     }
   })
 

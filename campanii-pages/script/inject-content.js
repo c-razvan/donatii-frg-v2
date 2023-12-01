@@ -82,6 +82,8 @@ fetch(jsonFilePath)
       carousel.appendChild(carouselCard);
       document.getElementById("main-container").appendChild(carousel);
 
+      
+
       console.log("OK");
     } else {
       console.log("Error");
