@@ -1,4 +1,6 @@
-const jsonFilePath = "../paragrafe/descrieri.json";
+// generator
+
+const jsonFilePath = `${navSubfolderPath}/paragrafe/descrieri.json`;
 
 // Fetch the JSON data using the Fetch API
 fetch(jsonFilePath)
