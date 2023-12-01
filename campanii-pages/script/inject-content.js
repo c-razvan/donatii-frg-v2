@@ -61,8 +61,6 @@ fetch(jsonFilePath)
       title.innerHTML = jsonData.Campanii[id].cardTitle;
       textContainer.appendChild(title);
 
-      console.log(title.innerHTML.length )
-
       if (title.innerHTML.length > 30) {
         textContainer.setAttribute("class", "text-container h-50");
       } else {
