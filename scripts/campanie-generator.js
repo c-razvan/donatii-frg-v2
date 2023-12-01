@@ -1,60 +1,83 @@
-let cardImage = [];
-let cardParagraf = [];
-let cardLink = [];
+const jsonFilePath = "../paragrafe/descrieri.json";
 
-for (let i = 0; i < 4; i++) {
-  //col
-  let col = document.createElement("div");
-  col.setAttribute("class", "col");
+// Fetch the JSON data using the Fetch API
+fetch(jsonFilePath)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${jsonFilePath}`);
+    }
+    return response.json();
+  })
+  .then((jsonData) => {
 
-  // card
 
-  let cardContainer = document.createElement("div");
-  cardContainer.setAttribute("class", "card");
+    // Generator
+    for (let i = 0; i < jsonData.Campanii.length; i++) {
 
-  // image
+      //parasare
 
-  let image = document.createElement("img");
-  image.setAttribute("class", "card-img-top");
-  image.setAttribute("src", "./assets/Main-Photo.jpeg");
 
-  // paragraf
+      //col
+      let col = document.createElement("div");
+      col.setAttribute("class", "col");
+    
+      // card
+    
+      let cardContainer = document.createElement("div");
+      cardContainer.setAttribute("class", "card");
+    
+      // image
+    
+      let image = document.createElement("img");
+      image.setAttribute("class", "card-img-top");
+      image.setAttribute("src", `./assets/campanii-img/${jsonData.Campanii[i].cardImage}`);
+    
+      // paragraf
+    
+      let cardContent = document.createElement("div");
+      cardContent.setAttribute("class", "card-body");
+    
+      // title
+    
+      let title = document.createElement("h5");
+      title.innerHTML = `${jsonData.Campanii[i].cardTitle}`;
+    
+      if (title.innerHTML == "undefined") {
+        title.innerHTML = "Campanie în lucru!";
+      }
+    
+      // paragraf
+    
+      let paragraf = document.createElement("p");
+      paragraf.innerHTML = jsonData.Campanii[i].descriere;
+    
+      if (paragraf.innerHTML.length > 95) {
+        paragraf.innerHTML =
+        jsonData.Campanii[i].descriere.substring(0, 120) + "..."
+      }
+    
+      // button
+    
+      let button = document.createElement("a");
+      button.setAttribute("class", "btn btn-primary btn-campanie");
+      button.setAttribute("href", `./Campanii/${jsonData.Campanii[i].cardLink}`);
+      button.innerHTML = "Citește mai mult";
+    
+      // append
+      cardContent.appendChild(title);
+      cardContent.appendChild(paragraf);
+      cardContent.appendChild(button);
+      cardContainer.appendChild(image);
+      cardContainer.appendChild(cardContent);
+      col.appendChild(cardContainer);
+    
+      // final append
+      document.getElementById("card-group").appendChild(col);
+    }
 
-  let cardContent = document.createElement("div");
-  cardContent.setAttribute("class", "card-body");
 
-  // title
+  })
 
-  let title = document.createElement("h5");
-  title.innerHTML = "Card title";
-
-  // paragraf
-
-  let paragraf = document.createElement("p");
-  paragraf.innerHTML =
-    `Some quick example text to build on the card title and make up the bulk of the card's content. 
-    Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-  if (paragraf.innerHTML.length > 95) {
-    paragraf.innerHTML =
-      "Some quick example text to build on the card title and make up the bulk of the card's content. ";
-  }
-
-  // button
-
-  let button = document.createElement("a");
-  button.setAttribute("class", "btn btn-primary btn-campanie");
-  button.setAttribute("href", "#");
-  button.innerHTML = "Citește mai mult";
-
-  // append
-  cardContent.appendChild(title);
-  cardContent.appendChild(paragraf);
-  cardContent.appendChild(button);
-  cardContainer.appendChild(image);
-  cardContainer.appendChild(cardContent);
-  col.appendChild(cardContainer);
-
-  // final append
-  document.getElementById("card-group").appendChild(col);
-}
+  .catch((error) => {
+    console.error("Error fetching JSON:", error);
+  });

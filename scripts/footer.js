@@ -86,6 +86,6 @@ copyRight.style.textAlign = "center";
 copyRight.style.padding = "1rem";
 copyRight.style.marginBottom = "1rem";
 copyRight.style.backgroundColor = "rgb(240,240,240)";
-copyRight.innerHTML = `Federația Română de Gimnastică ${date.getFullYear()} - Toate drepturile rezervate`;
+copyRight.innerHTML = `Federația Română de Gimnastică ${date.getFullYear()} <br> Toate drepturile rezervate`;
 
 footer.appendChild(copyRight);

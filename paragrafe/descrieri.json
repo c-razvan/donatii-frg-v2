@@ -1,0 +1,11 @@
+{
+  "Campanii": [
+    {
+      "userId": "0",
+      "cardImage": "FETE.jpg",
+      "cardTitle": "Echipa Fete",
+      "cardLink": "campanieDeTest.html",
+      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
+    }
+  ]
+}
