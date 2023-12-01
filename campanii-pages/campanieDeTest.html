@@ -22,6 +22,9 @@
     <script defer src="../scripts/botton-generator.js"></script>
     <script defer src="../scripts/campanie-generator.js"></script>
     <script defer src="../scripts/footer.js"></script>
+
+    <!--Specific Script-->
+    <script defer src="./script/inject-content.js"></script>
   </head>
   <body>
     <!--Donate-->
@@ -39,12 +42,21 @@
       </div>
     </header>
     <!--Main-->
-    TEST
+    <div class="container">
+      <div id="carouselExample" class="carousel slide pointer-event">
+        <div class="carousel-inner" id="main-container" char="0"></div>
+      </div>
+    </div>
     <!--Alte Campanii-->
     <div class="container mt-3">
-      <h4 class="contact-head">Campaniile Noastre</h4>
+      <h4 class="contact-head">Descriere</h4>
+      <div id="paragraf"></div>
+    </div>
+    <!--Alte Campanii-->
+    <div class="container mt-3">
+      <h4 class="contact-head">Alte Campanii FRG</h4>
       <div
-        class="card-group row row-cols-1 row-cols-md-4 g-4"
+        class="card-group row row-cols-1 row-cols-lg-4 g-4"
         id="card-group"
       ></div>
     </div>

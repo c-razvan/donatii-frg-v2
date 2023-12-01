@@ -2,41 +2,47 @@
   "Campanii": [
     {
       "userId": "0",
+      "cardColor": "blue",
       "cardImage": "FETE.jpg",
-      "cardTitle": "Echipa Fete",
+      "cardTitle": "Calendar competitional international si tabere de pregatire",
       "cardLink": "campanieDeTest.html",
-      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
+      "descriere": "O experiență cât mai vastă a sportivilor în diverse tabere de pregătire, schimburi de experiență sau participarea la competiții internaționale înseamnă un nivel de performanță mult mai ridicat. Antrenamentele alături de sportivi și antrenori străini și participarea la concursuri internaționale le formează gimnaștilor români un pachet de experiență complet și competitiv, iar nivelul rezultatelor are o tendință crescătoare."
     },
     {
-      "userId": "0",
+      "userId": "1",
+      "cardColor": "blue",
       "cardImage": "BOYS.jpg",
       "cardTitle": "Echipa Băieți",
       "cardLink": "campanieDeTest.html",
       "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
     },
     {
-      "userId": "0",
+      "userId": "2",
+      "cardColor": "blue",
       "cardImage": "GfA.jpg",
       "cardTitle": "Echipa Gimnastică Pentru Toți",
       "cardLink": "campanieDeTest.html",
       "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
     },
     {
-      "userId": "0",
+      "userId": "3",
+      "cardColor": "blue",
       "cardImage": "FETE.jpg",
       "cardTitle": "Echipa Fete",
       "cardLink": "campanieDeTest.html",
       "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
     },
     {
-      "userId": "0",
+      "userId": "4",
+      "cardColor": "blue",
       "cardImage": "BOYS.jpg",
       "cardTitle": "Echipa Băieți",
       "cardLink": "campanieDeTest.html",
       "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
     },
     {
-      "userId": "0",
+      "userId": "5",
+      "cardColor": "blue",
       "cardImage": "GfA.jpg",
       "cardTitle": "Echipa Gimnastică Pentru Toți",
       "cardLink": "campanieDeTest.html",

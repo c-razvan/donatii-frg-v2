@@ -1,23 +1,3 @@
-// get dynamic path
-
-function getScriptPath() {
-  const scriptElement = document.currentScript;
-
-  if (scriptElement) {
-    const scriptSrc = scriptElement.src;
-    return scriptSrc;
-  } else {
-    console.error("document.currentScript is not supported in this browser.");
-    return null;
-  }
-}
-
-const navScriptPath = getScriptPath();
-const navSubfolderPath = navScriptPath.replace(
-  `/scripts/${navScriptPath.split("/").pop()}`,
-  ""
-);
-
 // Logo
 
 let image = document.createElement("img");
