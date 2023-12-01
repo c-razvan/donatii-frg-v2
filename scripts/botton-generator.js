@@ -1,10 +1,29 @@
+// get dynamic path
+
+function getScriptPath() {
+  const scriptElement = document.currentScript;
+
+  if (scriptElement) {
+    const scriptSrc = scriptElement.src;
+    return scriptSrc;
+  } else {
+    console.error("document.currentScript is not supported in this browser.");
+    return null;
+  }
+}
+
+const buttonScriptPath = getScriptPath();
+const buttonSubfolderPath = buttonScriptPath.replace(`scripts/${buttonScriptPath.split('/').pop()}`, "");
+
+// buttons
+
 let buttons = [
   {
     title: "Redirecționează",
     color: "blue",
     content: {
       linkTitle: ["3,5% - Persoane Fizice", "20% - Persoane Juridice"],
-      links: ["./", "./"],
+      links: [`${buttonSubfolderPath}`, `${buttonSubfolderPath}`],
     },
   },
   {
@@ -12,7 +31,7 @@ let buttons = [
     color: "yellow",
     content: {
       linkTitle: ["Persoane Fizice", "Persoane Juridice"],
-      links: ["./", "./"],
+      links: [`${buttonSubfolderPath}`, `${buttonSubfolderPath}`],
     },
   },
   {
@@ -20,7 +39,7 @@ let buttons = [
     color: "red",
     content: {
       linkTitle: ["Sponsorizare în Bani", "Sponsorizare în Bunuri și Servicii"],
-      links: ["./", "./"],
+      links: [`${buttonSubfolderPath}`, `${buttonSubfolderPath}`],
     },
   },
 ];
@@ -39,10 +58,12 @@ for (let j = 0; j < buttons.length; j++) {
   button.setAttribute("type", "button");
   button.innerHTML = `${buttons[j].title}`;
 
+  // arrow indicator
+
   let indicator = document.createElement("img");
   indicator.setAttribute(
     "src",
-    "./assets/icon/arrow.uturn.down.circle.fill.svg"
+    `${buttonSubfolderPath}/assets/icon/arrow.uturn.down.circle.fill.svg`
   );
   indicator.setAttribute("class", "indicator");
 

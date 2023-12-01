@@ -12,14 +12,17 @@ function getScriptPath() {
   }
 }
 
-const scriptPath = getScriptPath();
-const subfolderPath = scriptPath.replace(`scripts/${scriptPath.split('/').pop()}`, "");
+const navScriptPath = getScriptPath();
+const navSubfolderPath = navScriptPath.replace(
+  `scripts/${navScriptPath.split("/").pop()}`,
+  ""
+);
 
 // Logo
 
 let image = document.createElement("img");
 image.setAttribute("class", "logo");
-image.setAttribute("src", `${subfolderPath}/assets/Logo-FRG.svg`);
+image.setAttribute("src", `${navSubfolderPath}/assets/Logo-FRG.svg`);
 image.setAttribute("alt", "Logo frgimnastica");
 
 document.getElementById("logo-container").appendChild(image);
@@ -72,7 +75,7 @@ for (let i = 0; i < linkList.length; i++) {
   link.innerHTML = `${linkList[i]}`;
 
   if (linkList[i] === "Acasă") {
-    link.setAttribute("href", `${subfolderPath}/index.html`);
+    link.setAttribute("href", `${navSubfolderPath}/index.html`);
   }
 
   if (linkList[i] === "Știri") {
@@ -84,15 +87,15 @@ for (let i = 0; i < linkList.length; i++) {
   }
 
   if (linkList[i] === "Despre Noi") {
-    link.setAttribute("href", `${subfolderPath}/despre-noi.html`);
+    link.setAttribute("href", `${navSubfolderPath}/despre-noi.html`);
   }
 
   if (linkList[i] === "Întrebări") {
-    link.setAttribute("href", `${subfolderPath}/intrebari.html`);
+    link.setAttribute("href", `${navSubfolderPath}/intrebari.html`);
   }
 
   if (linkList[i] === "Contact") {
-    link.setAttribute("href", `${subfolderPath}/contact.html`);
+    link.setAttribute("href", `${navSubfolderPath}/contact.html`);
   }
 
   if (linkList[i] === "Înapoi la Site-ul FRG") {

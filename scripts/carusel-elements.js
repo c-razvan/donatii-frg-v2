@@ -1,3 +1,22 @@
+// get dynamic path
+
+function getScriptPath() {
+  const scriptElement = document.currentScript;
+
+  if (scriptElement) {
+    const scriptSrc = scriptElement.src;
+    return scriptSrc;
+  } else {
+    console.error("document.currentScript is not supported in this browser.");
+    return null;
+  }
+}
+
+const carouselScriptPath = getScriptPath();
+const carouselSubfolderPath = carouselScriptPath.replace(`scripts/${carouselScriptPath.split('/').pop()}`, "");
+
+// element define
+
 let elements = {
   photo: ["Main-Photo.jpeg", "20.png", "20.png"],
   line: ["red", "blue", "yellow"],
@@ -36,7 +55,7 @@ for (let i = 0; i < elements.title.length; i++) {
 
   let photo = document.createElement("img");
   photo.setAttribute("class", "img-fluid");
-  photo.setAttribute("src", `./assets/${elements.photo[i]}`);
+  photo.setAttribute("src", `${carouselSubfolderPath}/assets/${elements.photo[i]}`);
   photo.setAttribute("alt", "Main Event");
 
   imgContainer.appendChild(photo);
