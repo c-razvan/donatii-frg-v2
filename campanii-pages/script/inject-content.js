@@ -38,7 +38,6 @@ fetch(jsonFilePath)
       // textContainer
 
       let textContainer = document.createElement("div");
-      textContainer.setAttribute("class", "text-container");
       textContainer.setAttribute("id", "text-container");
 
       // line
@@ -61,6 +60,14 @@ fetch(jsonFilePath)
       let title = document.createElement("h1");
       title.innerHTML = jsonData.Campanii[id].cardTitle;
       textContainer.appendChild(title);
+
+      console.log(title.innerHTML.length )
+
+      if (title.innerHTML.length > 30) {
+        textContainer.setAttribute("class", "text-container h-50");
+      } else {
+        textContainer.setAttribute("class", "text-container h-25");
+      }
 
       // paragraf
 

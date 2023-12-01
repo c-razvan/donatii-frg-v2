@@ -3,49 +3,49 @@
     {
       "userId": "0",
       "cardColor": "blue",
-      "cardImage": "FETE.jpg",
+      "cardImage": "0.jpeg",
       "cardTitle": "Calendar competitional international si tabere de pregatire",
-      "cardLink": "campanieDeTest.html",
+      "cardLink": "0.html",
       "descriere": "O experiență cât mai vastă a sportivilor în diverse tabere de pregătire, schimburi de experiență sau participarea la competiții internaționale înseamnă un nivel de performanță mult mai ridicat. Antrenamentele alături de sportivi și antrenori străini și participarea la concursuri internaționale le formează gimnaștilor români un pachet de experiență complet și competitiv, iar nivelul rezultatelor are o tendință crescătoare."
     },
     {
       "userId": "1",
       "cardColor": "blue",
-      "cardImage": "BOYS.jpg",
-      "cardTitle": "Echipa Băieți",
-      "cardLink": "campanieDeTest.html",
-      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
+      "cardImage": "1.jpeg",
+      "cardTitle": "Achiziție aparatură minigym",
+      "cardLink": "1.html",
+      "descriere": "Credem cu tărie în beneficiile fizice și mentale pe care practicarea gimnasticii le aduce încă de la cele mai fragede vârste. Fiecare club afiliat la Federația Română de Gimnastică dispune de spațiul și resursele umane necesare derulării unui program de tip mini-gym. Ne dorim să dotăm sălile de antrenament cu această aparatură specifică pentru a promova gimnastica atât în rândul celor foarte tineri, cât și pentru a le oferi gimnaștilor actuali un mediu sigur și controlat."
     },
     {
       "userId": "2",
       "cardColor": "blue",
-      "cardImage": "GfA.jpg",
-      "cardTitle": "Echipa Gimnastică Pentru Toți",
-      "cardLink": "campanieDeTest.html",
-      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
+      "cardImage": "2.jpeg",
+      "cardTitle": "Program anual de crestere a bazei nationale de selectie",
+      "cardLink": "2.html",
+      "descriere": "Academia de gimnastică “Raising Stars” este dedicată copiilor cu vârste cuprinse între 4 și 11 ani, localizați în medii rurale și defavorizate. Finanțarea unei astfel de academii se va efectua pe bază de concurs anunțat prin Asociația Comunelor și Satelor din România și va avea ca destinație comunele cu cel mai mic PIB pe cap de locuitor, care beneficiază de o sală de sport adecvată. Totodată, campania reprezintă un program anual de creștere a bazei naționale de selecție, unde le putem oferi gimnaștilor șansa de a deveni staruri internaționale."
     },
     {
       "userId": "3",
-      "cardColor": "blue",
-      "cardImage": "FETE.jpg",
-      "cardTitle": "Echipa Fete",
-      "cardLink": "campanieDeTest.html",
-      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
+      "cardColor": "red",
+      "cardImage": "3.jpeg",
+      "cardTitle": "Metode digitale pentru cresterea performantei sportive",
+      "cardLink": "3.html",
+      "descriere": "Infrastructura digitală crește performanța sportivă prin optimizarea programelor de antrenament atât pentru sportivi, cât și pentru antrenori. Digitalizarea acestor programe nu înseamnă doar mai puțin timp pierdut pentru echipă, ci și un randament mai bun, o monitorizare mult mai precisă, o serie de rapoarte profunde privind activitatea sportivă și o imagine de ansamblu a ceea ce trebuie îmbunătățit."
     },
     {
       "userId": "4",
       "cardColor": "blue",
-      "cardImage": "BOYS.jpg",
+      "cardImage": "4.jpeg",
       "cardTitle": "Echipa Băieți",
-      "cardLink": "campanieDeTest.html",
+      "cardLink": "4.html",
       "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
     },
     {
       "userId": "5",
-      "cardColor": "blue",
-      "cardImage": "GfA.jpg",
+      "cardColor": "yellow",
+      "cardImage": "5.jpeg",
       "cardTitle": "Echipa Gimnastică Pentru Toți",
-      "cardLink": "campanieDeTest.html",
+      "cardLink": "5.html",
       "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
     }
   ]

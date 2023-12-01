@@ -4,12 +4,24 @@
   margin: 0.5rem;
   overflow: hidden;
   background-color: rgb(240, 240, 240);
-  justify-content: space-between !important;
-  height: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
-.card h5 {
-  min-height: 3rem;
+.imgBox {
+  object-fit: contain;
+  width: 40%;
+  margin: 0;
+}
+
+.card-body {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+.card:hover {
+  color: #0083c4;
+  text-decoration: none !important;
 }
 
 .btn-campanie {
@@ -23,12 +35,11 @@
   background-color: transparent;
   color: #0083c4;
   padding: 0;
-  text-decoration: underline;
+
 }
 
 .btn-campanie:active {
   background-color: transparent !important;
   color: #004a6f !important;
   padding: 0;
-  text-decoration: underline;
 }
