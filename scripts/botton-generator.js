@@ -14,7 +14,10 @@ let buttons = [
     color: "yellow",
     content: {
       linkTitle: ["Persoane Fizice", "Persoane Juridice"],
-      links: [`${navSubfolderPath}`, `${navSubfolderPath}`],
+      links: [
+        `${navSubfolderPath}/doneaza/doneatii-persoane-fizice.html`,
+        `${navSubfolderPath}`,
+      ],
     },
   },
   {

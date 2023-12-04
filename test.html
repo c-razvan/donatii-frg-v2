@@ -3,115 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0083c4" />
-    <title>Federația Română de Gimnastică</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Style -->
-
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style-nav.css" />
-    <link rel="stylesheet" href="./css/style-footer.css" />
-    <link rel="stylesheet" href="./css/static-pages/intrebari.css" />
-    <link rel="stylesheet" href="./css/buttons-donatii.css" />
-    <link rel="stylesheet" href="./css/static-pages/contact.css" />
-    <!-- Scripts -->
-
-    <script defer src="./scripts/bootstrap.js"></script>
-    <script defer src="./scripts/nav-bar-element.js"></script>
-    <script defer src="./scripts/footer.js"></script>
-    <script defer src="./scripts/botton-generator.js"></script>
-    <script defer src="./scripts/static scripts/harta.js"></script>
+    <title>Radio Form with Other (Bootstrap)</title>
+    <!-- Add Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <!--Donate-->
-    <div class="donate-button">test</div>
-    <!-- NavBar-->
-    <header class="navbar navbar-expand-lg">
-      <div class="container" id="nav-container">
-        <a class="logo-link" href="index.html" id="logo-container"></a>
-
-        <button id="collapse-button"></button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto list-nav" id="navbar-nav"></ul>
-        </div>
-      </div>
-    </header>
-    <!--Contact-->
-    <div class="container case mt-3">
-      <div class="Contact" id="Contact">
-        <h1 class="text-center my-5 w-100">Contact</h1>
-      </div>
-    </div>
-    <!--Form-->
-    <div class="container mt-3 form">
-      <div class="Contact" id="Contact">
-        <h3 class="text-center mt-5 w-100 mb-0">Formular</h3>
-        <div>
-          <script
-            type="text/javascript"
-            src="https://form.jotform.com/jsform/213491785641361"
-          ></script>
-        </div>
-      </div>
-    </div>
-    <!--Adresa-->
-    <div class="container mt-3 p-0">
-      <div class="case p-4 flex-column text-center">
-        <h3 class="mx-4">Adresa</h3>
-        <p>
-          Str. Vasile Conta nr. 16, Sector II, 020954 <br />
-          Bucureşti, Romania
+    <div class="container m-0">
+      <div class="mt-5">
+        <!-- <h1 class="fst-italic lh-1 mb-4">Formular donație</h1>
+        <p class="mb-2">
+          Plasând o donație am citit și sunt de acord cu
+          <a href="politica.html">politica de confidențialitate.</a>
         </p>
-        <button type="button" class="mb-3" id="map-button">
-          Afișează Hartă
-        </button>
-        <div class="ratio ratio-16x9" id="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.655618863811!2d26.09913931591433!3d44.44022597910224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff48bcf41775%3A0x4a80812fe5ae9659!2sStrada%20Vasile%20Conta%2016%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sro!2sro!4v1613145834515!5m2!1sro!2sro"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-            width="600"
-            height="350"
-            frameborder="0"
-          ></iframe>
-        </div>
+        <img src="./assets/visa.png" alt="euplatesc"  /> -->
+
+        <form
+          action="euplatesc/plateste.php"
+          enctype="multipart/form-data"
+          method="post"
+          name="EuPlatesc"
+          onsubmit="return formCheck(this);"
+        >
+          <table class="aligncenter" cellpadding="30">
+            <tbody>
+              <tr>
+                <td>Donatia TA</td>
+              </tr>
+              <!--Recurenta-->
+              <tr>
+                <td>Plată recurentă?</td>
+                <td>
+                  <input
+                    name="recurent"
+                    type="radio"
+                    id="nu"
+                    value="nu"
+                    checked="yes"
+                  />
+                  <label for="nu">Singular</label>
+                  <input name="recurent" type="radio" id="da" value="yes" />
+                  <label for="da">Recurent</label>
+                </td>
+              </tr>
+              <!--Valoare Donatie-->
+              <tr>
+                <td>Suma donației</td>
+                <td style="display: flex">
+                  <button onclick="fill(15)">15</button>
+                  <button onclick="fill(30)">30</button>
+                  <button onclick="fill(50)">50</button>
+                  <button onclick="choose()">Altă sumă</button>
+                  <script>
+                    function fill(number) {
+                      document.getElementById("amount").value = number;
+                      document.getElementById("amount").style.display = "none";
+                    }
+                    function choose() {
+                      document.getElementById("amount").value = 0;
+                      document.getElementById("amount").style.display = "block";
+                    }
+                  </script>
+                  <input
+                    name="amount"
+                    required="yes"
+                    type="number"
+                    id="amount"
+                    style="display: none"
+                  />
+                </td>
+              </tr>
+              <!--Moneda-->
+              <tr>
+                <td>Plata în</td>
+                <td>
+                  <input
+                    class="inline"
+                    id="curr-ron"
+                    checked="checked"
+                    name="curr"
+                    value="RON"
+                    type="radio"
+                  />
+                  <label class="inline" for="curr-ron">LEI</label>
+                  <input
+                    class="inline"
+                    id="curr-eur"
+                    name="curr"
+                    value="EUR"
+                    type="radio"
+                  />
+                  <label class="inline" for="curr-eur">EURO</label>
+                  <input
+                    class="inline"
+                    id="curr-usd"
+                    name="curr"
+                    value="USD"
+                    type="radio"
+                  />
+                  <label class="inline" for="curr-usd">USD</label>
+                </td>
+              </tr>
+              <!--Destinație-->
+              <!-- <tr>
+                <td>Destinația donației</td>
+                <td>
+                  <select name="desc" required="">
+                    <option selected value="">Alege destinația donației</option>
+                    <option value="valoarea 1">Donație generală</option>
+                    <option value="valoarea 5">MiniGym</option>
+                    <option value="valoarea 6">Înaltă performanță</option>
+                    <option value="valoarea 8">Academia de Gimnastică</option>
+                    <option value="valoarea 9">Cursuri vocaționale</option>
+                    <option value="valoarea 10">Asigurări medicale</option>
+                    <option value="valoarea 11">Digitalizare</option>
+                    <option value="valoarea 12">Premii top 10 sportivi</option>
+                    <option value="valoarea 13">Tabere de pregătire</option>
+                  </select>
+                </td>
+              </tr> -->
+
+              <tr>
+                <td>Date Personale</td>
+              </tr>
+              <tr>
+                <td>Nume</td>
+                <td><input name="fname" required="" type="text" /></td>
+              </tr>
+              <tr>
+                <td>Prenume</td>
+                <td><input name="lname" required="" type="text" /></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td>E-mail</td>
+                <td><input name="email" required="" type="text" /></td>
+              </tr>
+              <tr>
+                <td>Telefon</td>
+                <td><input name="phone" required="" type="text" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="public"
+                    name="checkbox"
+                    value="Publicare"
+                  />
+                  <label for="checkbox">
+                    Sunt de acord cu publicarea numelui pe site.</label
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <input
+            class="btn btn-primary btn-lg"
+            name="Doneaza"
+            value="Donează!"
+            type="submit"
+          />
+        </form>
       </div>
     </div>
-    <!--Telefon si Mail-->
-    <div class="container text-center mt-3 p-0">
-      <div class="row g-4">
-        <div class="col-sm-6">
-          <div class="case p-4">
-            <h3 class="text-center my-4 w-100">Telefon</h3>
-            <a href="tel:+40318058261" style="text-decoration: none">
-              +40318058261
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="case p-4">
-            <h3 class="text-center my-4 w-100">Email</h3>
-            <a
-              href="mailto:donatii@frgimnastica.com"
-              style="text-decoration: none"
-            >
-              donatii@frgimnastica.com
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Bottom-->
-    <div class="container mt-5">
-      <div class="out-box">
-        <h4 class="contact-head" id="sustine">Susține Performanța</h4>
-        <div class="buttons-container" id="buttons-container"></div>
-      </div>
-    </div>
-    <!--Footer-->
-    <footer class="container mt-3" id="footer"></footer>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

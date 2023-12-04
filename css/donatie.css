@@ -1,0 +1,47 @@
+
+
+.section{
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 1.5rem;
+}
+
+.section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.donatia-ta-section:last-child{
+    padding-bottom: 1rem;
+}
+
+.datepersonale * {
+  display: block;
+}
+
+.btn-donatie {
+  border-radius: 0;
+  margin: 0;
+  background-color: white;
+  color: #0083c4;
+  border: none;
+}
+
+.btn-check:checked + .btn-donatie,
+:not(.btn-check) + .btn-donatie:active,
+.btn-donatie:first-child:active {
+  background-color: #0083c4 !important;
+}
+
+.btn-donatie:hover {
+    background-color: #0083c4;
+    color: white;
+  }
+
+  @media only screen and (max-width: 990px) {
+    .donatia-ta-section {
+        
+      }
+  }

@@ -73,9 +73,10 @@ fetch(jsonFilePath)
 
       // delete current item
 
-      if (document.getElementById("main-container").attributes[2].value === `${i}`) {
+      if (document.getElementById("main-container") === null) {
+        console.log("Not Found")
+      } else if (document.getElementById("main-container").attributes[2].value === `${i}`){
         col.setAttribute("class", "d-none");
-      } else {
       }
     }
   })
