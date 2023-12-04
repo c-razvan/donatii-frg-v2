@@ -9,7 +9,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
   padding: 1.5rem;
-  height: 350px;
+  height: 380px;
 }
 
 .section:hover {
@@ -28,7 +28,7 @@
   border-radius: 0;
   margin: 0;
   background-color: white;
-  color: #0083c4;
+  color: #000000;
   border: none;
 }
 
@@ -44,19 +44,32 @@
 }
 
 .action-button {
-    text-align: center;
-    text-decoration: none;
-    margin-top: 0.75rem;
-    color: white;
-    border-radius: 40px 0 40px 0;
-    height: 30px;
-    width: 30%;
-    padding-top: 1px;
-    background-color: #0083c4;
-    border: 0;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  color: white;
+  border-radius: 40px 0 40px 0;
+  height: 30px;
+  width: 30%;
+  padding-top: 1px;
+  background-color: #0083c4;
+  border: 0;
 }
 
+.euplatesc2 {
+    display: none;
+  }
+
+
 @media only screen and (max-width: 990px) {
+  .euplatesc1 {
+    display: none;
+  }
+  .euplatesc2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
   .wrapper {
     width: 100%;
   }
