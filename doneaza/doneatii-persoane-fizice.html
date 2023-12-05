@@ -26,6 +26,7 @@
       src="../scripts/campanie-generator-pagina-campanie.js"
     ></script>
     <script defer src="../scripts/footer.js"></script>
+    <script defer src="./scripts/script-plata.js"></script>
   </head>
   <body>
     <!-- NavBar-->
@@ -47,14 +48,14 @@
         <div class="text-start">
           <h1>Formular donație</h1>
           <p class="mb-2">
-            Plasând o donație am citit și sunt de acord cu <br>
+            Plasând o donație am citit și sunt de acord cu <br />
             <a href="./politica.html">politica de confidențialitate.</a>
           </p>
         </div>
         <div class="euplatesc1"><img src="../assets/visa.png" alt="" /></div>
       </div>
       <form
-        action="euplatesc/plateste.php"
+        action="../euplatesc/plateste.php"
         enctype="multipart/form-data"
         method="post"
         name="EuPlatesc"
@@ -63,9 +64,9 @@
         <section class="donation-form-body">
           <div class="d-flex flex-wrap">
             <div class="wrapper">
-              <h2 class="ms-3">Susține Performanța!</h2>
               <div class="section">
-                <div class="mt-2 donatia-ta-section">
+                <h2 class="mb-3">Susține Performanța!</h2>
+                <div class="mb-3 donatia-ta-section">
                   <!--Recurenta-->
                   <h6>Doriți să ne susțineți lunar?</h6>
                   <div class="ms-3 d-flex">
@@ -95,7 +96,7 @@
                   </div>
                 </div>
                 <!--Valoare Donatie-->
-                <div class="mt-3 donatia-ta-section">
+                <div class="mb-3 donatia-ta-section">
                   <h6>Suma donației</h6>
                   <div style="display: block" class="mx-3">
                     <div>
@@ -178,12 +179,13 @@
                         required="yes"
                         type="number"
                         id="amount"
+                        min="1"
                       />
                     </div>
                   </div>
                 </div>
                 <!--Moneda-->
-                <div class="mt-3 donatia-ta-section">
+                <div class="mb-3 donatia-ta-section">
                   <h6>Plata în</h6>
                   <div class="ms-3 d-flex">
                     <input
@@ -241,9 +243,9 @@
         </td>
       </tr> -->
             <div class="wrapper">
-              <h2 class="ms-3">Date Personale</h2>
               <div class="section datepersonale">
-                <div>
+                <h2 class="mb-3">Date Personale</h2>
+                <div class="mb-3">
                   <label for="nume">Nume</label>
                   <input
                     class="form-control"
@@ -253,7 +255,7 @@
                     id="nume"
                   />
                 </div>
-                <div>
+                <div class="mb-3">
                   <label for="prenume">Prenume</label>
                   <input
                     class="form-control"
@@ -263,7 +265,7 @@
                     id="prenume"
                   />
                 </div>
-                <div>
+                <div class="mb-3">
                   <label for="mail">E-mail</label>
                   <input
                     class="form-control"
@@ -273,13 +275,13 @@
                     id="mail"
                   />
                 </div>
-                <div>
+                <div class="mb-3">
                   <label for="telefon">Telefon</label>
                   <input
                     class="form-control"
                     name="phone"
                     required=""
-                    type="text"
+                    type="number"
                     id="telefon"
                   />
                 </div>
@@ -288,7 +290,7 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    id="public"
+                    id="checkbox"
                     name="checkbox"
                     value="Publicare"
                   />
@@ -311,6 +313,17 @@
         </div>
       </form>
       <div class="euplatesc2"><img src="../assets/visa.png" alt="" /></div>
+    </div>
+    <!--Alta Modalitate de Donare-->
+    <div class="container mt-5">
+      <h4 class="contact-head">Doriți să ne susțineți prin transfer Bancar?</h4>
+      <div>
+        <p>Beneficiar: Federația Română de Gimnastică</p>
+        <p>Sucursală: Lipscani; SWIFT: RNCBROBU</p>
+        <p>Cont LEI: RO48 RNCB 0090 0005 0840 0001</p>
+        <p>Cont EURO: RO25 RNCB 0090 0005 0840 0027</p>
+        <p>Cont USD: RO21 RNCB 0090 0005 0840 0002</p>
+      </div>
     </div>
     <!--Alte Campanii-->
     <div class="container mt-5">
