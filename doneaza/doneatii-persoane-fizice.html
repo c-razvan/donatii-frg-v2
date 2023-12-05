@@ -52,14 +52,15 @@
             <a href="./politica.html">politica de confidențialitate.</a>
           </p>
         </div>
-        <div class="euplatesc1"><img src="../assets/visa.png" alt="" /></div>
+        <div class="euplatesc1">
+          <img src="../assets/visa.png" alt="" />
+        </div>
       </div>
       <form
         action="../euplatesc/plateste.php"
         enctype="multipart/form-data"
         method="post"
         name="EuPlatesc"
-        onsubmit="return formCheck(this);"
       >
         <section class="donation-form-body">
           <div class="d-flex flex-wrap">
@@ -225,23 +226,23 @@
             </div>
 
             <!--Destinație-->
-            <!-- <tr>
-        <td>Destinația donației</td>
-        <td>
-          <select name="desc" required="">
-            <option selected value="">Alege destinația donației</option>
-            <option value="valoarea 1">Donație generală</option>
-            <option value="valoarea 5">MiniGym</option>
-            <option value="valoarea 6">Înaltă performanță</option>
-            <option value="valoarea 8">Academia de Gimnastică</option>
-            <option value="valoarea 9">Cursuri vocaționale</option>
-            <option value="valoarea 10">Asigurări medicale</option>
-            <option value="valoarea 11">Digitalizare</option>
-            <option value="valoarea 12">Premii top 10 sportivi</option>
-            <option value="valoarea 13">Tabere de pregătire</option>
-          </select>
-        </td>
-      </tr> -->
+            <tr>
+              <td>
+                <select name="desc" required="">
+                  <option selected value="">Alege destinația donației</option>
+                  <option value="valoarea 1">Donație generală</option>
+                  <option value="valoarea 5">MiniGym</option>
+                  <option value="valoarea 6">Înaltă performanță</option>
+                  <option value="valoarea 8">Academia de Gimnastică</option>
+                  <option value="valoarea 9">Cursuri vocaționale</option>
+                  <option value="valoarea 10">Asigurări medicale</option>
+                  <option value="valoarea 11">Digitalizare</option>
+                  <option value="valoarea 12">Premii top 10 sportivi</option>
+                  <option value="valoarea 13">Tabere de pregătire</option>
+                </select>
+              </td>
+            </tr>
+
             <div class="wrapper">
               <div class="section datepersonale">
                 <h2 class="mb-3">Date Personale</h2>
@@ -250,7 +251,7 @@
                   <input
                     class="form-control"
                     name="fname"
-                    required=""
+                    required="true"
                     type="text"
                     id="nume"
                   />
@@ -260,7 +261,7 @@
                   <input
                     class="form-control"
                     name="lname"
-                    required=""
+                    required="true"
                     type="text"
                     id="prenume"
                   />
@@ -270,7 +271,7 @@
                   <input
                     class="form-control"
                     name="email"
-                    required=""
+                    required="true"
                     type="text"
                     id="mail"
                   />
@@ -280,7 +281,7 @@
                   <input
                     class="form-control"
                     name="phone"
-                    required=""
+                    required="false"
                     type="number"
                     id="telefon"
                   />
