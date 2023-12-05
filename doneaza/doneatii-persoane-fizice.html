@@ -43,7 +43,7 @@
     </header>
     <!--Doneatie-->
 
-    <div class="container mt-5">
+    <div class="container mt-5 p-lg-0">
       <div class="ms-3 mb-3 d-flex justify-content-between">
         <div class="text-start">
           <h1>Formular donație</h1>
@@ -222,26 +222,19 @@
                     >
                   </div>
                 </div>
-                <tr>
-                  <td>
+
+                <div class="d-none">
+                  <div>
                     <select name="desc" required="">
-                      <option selected value="">
-                        Alege destinația donației
+                      <option
+                        selected
+                        value="Donație Generala - Persoana Fizica"
+                      >
+                        Donație Generala - Persoana Fizica
                       </option>
-                      <option value="valoarea 1">Donație generală</option>
-                      <option value="valoarea 5">MiniGym</option>
-                      <option value="valoarea 6">Înaltă performanță</option>
-                      <option value="valoarea 8">Academia de Gimnastică</option>
-                      <option value="valoarea 9">Cursuri vocaționale</option>
-                      <option value="valoarea 10">Asigurări medicale</option>
-                      <option value="valoarea 11">Digitalizare</option>
-                      <option value="valoarea 12">
-                        Premii top 10 sportivi
-                      </option>
-                      <option value="valoarea 13">Tabere de pregătire</option>
                     </select>
-                  </td>
-                </tr>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -319,20 +312,23 @@
       </form>
       <div class="euplatesc2"><img src="../assets/visa.png" alt="" /></div>
     </div>
+
     <!--Alta Modalitate de Donare-->
-    <div class="container mt-5">
-      <h4 class="contact-head">Doriți să ne susțineți prin transfer Bancar?</h4>
-      <div>
+    <div class="container mt-4 d-flex flex-wrap p-lg-0">
+      <div class="section h-auto w-100">
+        <h1>Doriți să ne susțineți prin transfer Bancar?</h1>
         <p>Beneficiar: Federația Română de Gimnastică</p>
-        <p>Sucursală: Lipscani; SWIFT: RNCBROBU</p>
-        <p>Cont LEI: RO48 RNCB 0090 0005 0840 0001</p>
-        <p>Cont EURO: RO25 RNCB 0090 0005 0840 0027</p>
-        <p>Cont USD: RO21 RNCB 0090 0005 0840 0002</p>
+        <p>Sucursală: Lipscani</p>
+        <p>SWIFT: RNCBROBU</p>
+        <h4 class="contact-head my-3">Conturi Bancare</h4>
+        <p>LEI: RO48 RNCB 0090 0005 0840 0001</p>
+        <p>EURO: RO25 RNCB 0090 0005 0840 0027</p>
+        <p>USD: RO21 RNCB 0090 0005 0840 0002</p>
       </div>
     </div>
     <!--Alte Campanii-->
     <div class="container mt-5">
-      <h4 class="contact-head">Campanii FRG</h4>
+      <h4 class="contact-head">Susțineți o campanie FRG</h4>
       <div
         class="card-group row row-cols-1 row-cols-lg-3 g-3"
         id="card-group"
