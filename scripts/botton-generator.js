@@ -15,8 +15,8 @@ let buttons = [
     content: {
       linkTitle: ["Persoane Fizice", "Persoane Juridice"],
       links: [
-        `${navSubfolderPath}/doneaza/doneatii-persoane-fizice.html`,
-        `${navSubfolderPath}`,
+        `${navSubfolderPath}/doneaza/donatii-persoane-fizice.html`,
+        `${navSubfolderPath}/doneaza/donatii-persoane-juridice.html`,
       ],
     },
   },

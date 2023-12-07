@@ -16,6 +16,14 @@ let donatii = {
   },
 };
 
+let datePersonaleNecesare = [
+  ["Nume", "fnume"],
+  ["Prenume", "lnume"],
+  ["e-Mail", "email"],
+  ["Telefon", "phone"],
+];
+
+
 // section
 
 let section = document.createElement("section");
@@ -217,13 +225,6 @@ boxStyleDonatie.appendChild(destinatieDonatieContainer);
 
 /////////////////////////////////////////////////////////////////////////////
 
-let datePersonaleNecesare = [
-  ["Nume", "fnume"],
-  ["Prenume", "lnume"],
-  ["e-Mail", "email"],
-  ["Telefon", "phone"],
-];
-
 // wrapper2
 
 let wrapperDate = document.createElement("div");
@@ -234,7 +235,7 @@ boxStyleDate.setAttribute("class", "section datepersonale");
 
 let boxTitleDate = document.createElement("h2");
 boxTitleDate.setAttribute("class", "mb-3");
-boxTitleDate.innerHTML = "Date Personale!";
+boxTitleDate.innerHTML = "Date Personale";
 
 // date personale
 let dateleTale = document.createElement("div");
@@ -242,7 +243,7 @@ dateleTale.setAttribute("class", "mb-3");
 
 boxStyleDate.appendChild(boxTitleDate);
 
-for (i = 0; i < 4; i++) {
+for (i = 0; i < datePersonaleNecesare.length; i++) {
   //container
   let container5 = document.createElement("div");
   container5.setAttribute("class", "mb-3");
@@ -250,7 +251,9 @@ for (i = 0; i < 4; i++) {
   let input = document.createElement("input");
   input.setAttribute("class", "form-control");
   input.setAttribute("name", `${datePersonaleNecesare[i][1]}`);
-  input.setAttribute("type", "text");
+  if (i !== 3) {
+    input.setAttribute("type", `text`);
+  }
   input.setAttribute("id", `${datePersonaleNecesare[i][0]}`);
   input.setAttribute("required", `true`);
   if (i === 3) {
@@ -268,7 +271,29 @@ for (i = 0; i < 4; i++) {
   dateleTale.appendChild(container5);
 }
 
+//////////////////////////////////////////////////////////////////
+
+let container7 = document.createElement("div");
+container7.setAttribute("class", "d-flex");
+
+let termeniSiConditiiCaseta = document.createElement("input");
+termeniSiConditiiCaseta.setAttribute("class", "form-check-input me-2");
+termeniSiConditiiCaseta.setAttribute("type", "checkbox");
+termeniSiConditiiCaseta.setAttribute("required", "yes");
+termeniSiConditiiCaseta.setAttribute("id", "termeni");
+
+let termeniSiConditii = document.createElement("label");
+termeniSiConditii.setAttribute("class", "form-check-label");
+termeniSiConditii.setAttribute("for", "termeni");
+termeniSiConditii.innerHTML = `Plasând o donație am citit și sunt de acord cu <a style="text-decoration:none;" href=\"./politica.html\">politica de confidențialitate.</a>`;
+
+container7.appendChild(termeniSiConditiiCaseta);
+container7.appendChild(termeniSiConditii);
+
+//append
+
 boxStyleDate.appendChild(dateleTale);
+boxStyleDate.appendChild(container7);
 wrapperDate.appendChild(boxStyleDate);
 
 section.appendChild(wrapperDate);
@@ -278,7 +303,7 @@ section.appendChild(wrapperDate);
 //submit
 
 let buttonSection = document.createElement("div");
-buttonSection.setAttribute("class", "d-flex justify-content-center mt-3 w-100");
+buttonSection.setAttribute("class", "d-flex justify-content-center mt-5 w-100");
 
 let buttonDonare = document.createElement("input");
 buttonDonare.setAttribute("class", "action-button");

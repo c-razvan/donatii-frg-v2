@@ -1,3 +1,12 @@
+.doneaza-titlu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doneaza-titlu .title {
+  font-size: 55px;
+}
+
 .wrapper {
   width: 50%;
 }
@@ -52,11 +61,28 @@
   border: 0;
 }
 
+.define-button {
+  text-align: center;
+  color: white;
+  border-radius: 40px 0 40px 0;
+  padding-top: 1px;
+  background-color: #0083c4;
+  border: 0;
+  font-size: 16px;
+}
+
 .euplatesc2 {
   display: none;
 }
 
+.euplatesc1 img {
+  height: 90%;
+}
+
 @media only screen and (max-width: 990px) {
+  .doneaza-titlu .title {
+    font-size: 40px;
+  }
   .euplatesc1 {
     display: none;
   }

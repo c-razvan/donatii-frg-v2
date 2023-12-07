@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0083c4" />
+    <title>Federația Română de Gimnastică</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Style -->
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style-nav.css" />
+    <link rel="stylesheet" href="../css/style-main-event.css" />
+    <link rel="stylesheet" href="../css/buttons-donatii.css" />
+    <link rel="stylesheet" href="../css/style-footer.css" />
+    <link rel="stylesheet" href="../css/campanii-pagina-campanie.css" />
+    <link rel="stylesheet" href="../css/donatie.css" />
+
+    <!-- Scripts -->
+    <script defer src="../scripts/mobile-bar.js"></script>
+    <script defer src="../scripts/bootstrap.js"></script>
+    <script defer src="../scripts/nav-bar-element.js"></script>
+    <script defer src="../scripts/botton-generator.js"></script>
+    <script
+      defer
+      src="../scripts/campanie-generator-pagina-campanie.js"
+    ></script>
+    <script defer src="../scripts/footer.js"></script>
+    <script defer src="../scripts/form-generator-donatie.js"></script>
+  </head>
+  <body>
+    <!-- NavBar-->
+    <header class="navbar navbar-expand-lg">
+      <div class="container" id="nav-container">
+        <a class="logo-link" href="../index.html" id="logo-container"></a>
+
+        <button id="collapse-button"></button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto list-nav" id="navbar-nav"></ul>
+        </div>
+      </div>
+    </header>
+    <!--Doneatie-->
+
+    <div class="container mt-4 p-lg-0">
+      <div class="ms-3 doneaza-titlu">
+        <div class="text-start">
+          <h1 class="title">Formular donație</h1>
+          <h6 class="define-button">pentru Persoane Fizice</h6>
+        </div>
+        <div class="euplatesc1">
+          <img src="../assets/visa.png" alt="" />
+        </div>
+      </div>
+      <form
+        id="form"
+        action="../euplatesc/plateste.php"
+        enctype="multipart/form-data"
+        method="post"
+        name="EuPlatesc"
+      ></form>
+      <div class="euplatesc2"><img src="../assets/visa.png" alt="" /></div>
+    </div>
+
+    <!--Alta Modalitate de Donare-->
+    <div class="container mt-4 d-flex flex-wrap p-lg-0">
+      <div class="section h-auto w-100">
+        <h1>Doriți să ne susțineți prin transfer Bancar?</h1>
+        <p>Beneficiar: Federația Română de Gimnastică</p>
+        <p>Sucursală: Lipscani</p>
+        <p>SWIFT: RNCBROBU</p>
+        <h4 class="contact-head my-3">Conturi Bancare</h4>
+        <p>LEI: RO48 RNCB 0090 0005 0840 0001</p>
+        <p>EURO: RO25 RNCB 0090 0005 0840 0027</p>
+        <p>USD: RO21 RNCB 0090 0005 0840 0002</p>
+      </div>
+    </div>
+    <!--Alte Campanii-->
+    <div class="container mt-5">
+      <h4 class="contact-head">Susțineți o campanie FRG</h4>
+      <div
+        class="card-group row row-cols-1 row-cols-lg-3 g-3"
+        id="card-group"
+      ></div>
+    </div>
+    <!--Butoane Donatii-->
+    <div class="container mt-4">
+      <div class="out-box">
+        <h4 class="contact-head" id="sustine">Susține Performanța</h4>
+        <div class="buttons-container" id="buttons-container"></div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="container mt-5" id="footer"></footer>
+  </body>
+</html>
