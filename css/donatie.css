@@ -12,7 +12,7 @@
 }
 
 .section {
-  margin: 1rem;
+  margin: 0 1rem;
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid rgb(230, 230, 230);
@@ -51,24 +51,24 @@
 .action-button {
   text-align: center;
   text-decoration: none;
-  margin-top: 0.75rem;
   color: white;
   border-radius: 40px 0 40px 0;
   height: 30px;
-  width: 30%;
+  width: 25%;
   padding-top: 1px;
   background-color: #0083c4;
   border: 0;
+  font-size: 18px;
 }
 
 .define-button {
   text-align: center;
   color: white;
   border-radius: 40px 0 40px 0;
-  padding-top: 1px;
   background-color: #0083c4;
   border: 0;
   font-size: 16px;
+  padding: 0 1rem;
 }
 
 .euplatesc2 {
@@ -89,7 +89,6 @@
   .euplatesc2 {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
   }
   .wrapper {
     width: 100%;
@@ -98,5 +97,13 @@
     height: auto;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  .w-section-2{
+    margin-top: 1rem;
+  }
+
+  .action-button {
+    width: 50%;
   }
 }

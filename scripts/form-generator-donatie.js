@@ -228,7 +228,7 @@ boxStyleDonatie.appendChild(destinatieDonatieContainer);
 // wrapper2
 
 let wrapperDate = document.createElement("div");
-wrapperDate.setAttribute("class", "wrapper");
+wrapperDate.setAttribute("class", "wrapper w-section-2");
 
 let boxStyleDate = document.createElement("div");
 boxStyleDate.setAttribute("class", "section datepersonale");
@@ -303,7 +303,7 @@ section.appendChild(wrapperDate);
 //submit
 
 let buttonSection = document.createElement("div");
-buttonSection.setAttribute("class", "d-flex justify-content-center mt-5 w-100");
+buttonSection.setAttribute("class", "d-flex justify-content-center my-5 w-100");
 
 let buttonDonare = document.createElement("input");
 buttonDonare.setAttribute("class", "action-button");
