@@ -213,7 +213,8 @@ destinatieDonatie.innerHTML = "Donație Generala - Persoana Fizica";
 
 destinatieDonatieWheel.appendChild(destinatieDonatie);
 destinatieDonatieContainer.appendChild(destinatieDonatieWheel);
-boxStyleDonatie.appendChild(destinatieDonatieContainer)
+boxStyleDonatie.appendChild(destinatieDonatieContainer);
+
 /////////////////////////////////////////////////////////////////////////////
 
 let datePersonaleNecesare = [

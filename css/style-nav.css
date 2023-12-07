@@ -73,15 +73,24 @@ header {
   }
 
   .donate-button {
-    display: block;
+    display: flex;
     background-color: #0083c4;
     height: 24px;
     width: 100%;
     text-align: center;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
   }
 
   .donate-button a {
     color: white;
     text-decoration: none;
+  }
+
+  .donate-button:hover {
+
+    background-color: #006394;
+
   }
 }
