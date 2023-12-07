@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script defer src="../scripts/form-generator.js"></script>
   </head>
   <body>
     <div class="container m-0">
@@ -21,145 +22,14 @@
         <img src="./assets/visa.png" alt="euplatesc"  /> -->
 
         <form
+        id="form"
           action="euplatesc/plateste.php"
           enctype="multipart/form-data"
           method="post"
           name="EuPlatesc"
           onsubmit="return formCheck(this);"
         >
-          <table class="aligncenter" cellpadding="30">
-            <tbody>
-              <tr>
-                <td>Donatia TA</td>
-              </tr>
-              <!--Recurenta-->
-              <tr>
-                <td>Plată recurentă?</td>
-                <td>
-                  <input
-                    name="recurent"
-                    type="radio"
-                    id="nu"
-                    value="nu"
-                    checked="yes"
-                  />
-                  <label for="nu">Singular</label>
-                  <input name="recurent" type="radio" id="da" value="yes" />
-                  <label for="da">Recurent</label>
-                </td>
-              </tr>
-              <!--Valoare Donatie-->
-              <tr>
-                <td>Suma donației</td>
-                <td style="display: flex">
-                  <button onclick="fill(15)">15</button>
-                  <button onclick="fill(30)">30</button>
-                  <button onclick="fill(50)">50</button>
-                  <button onclick="choose()">Altă sumă</button>
-                  <script>
-                    function fill(number) {
-                      document.getElementById("amount").value = number;
-                      document.getElementById("amount").style.display = "none";
-                    }
-                    function choose() {
-                      document.getElementById("amount").value = 0;
-                      document.getElementById("amount").style.display = "block";
-                    }
-                  </script>
-                  <input
-                    name="amount"
-                    required="yes"
-                    type="number"
-                    id="amount"
-                    style="display: none"
-                  />
-                </td>
-              </tr>
-              <!--Moneda-->
-              <tr>
-                <td>Plata în</td>
-                <td>
-                  <input
-                    class="inline"
-                    id="curr-ron"
-                    checked="checked"
-                    name="curr"
-                    value="RON"
-                    type="radio"
-                  />
-                  <label class="inline" for="curr-ron">LEI</label>
-                  <input
-                    class="inline"
-                    id="curr-eur"
-                    name="curr"
-                    value="EUR"
-                    type="radio"
-                  />
-                  <label class="inline" for="curr-eur">EURO</label>
-                  <input
-                    class="inline"
-                    id="curr-usd"
-                    name="curr"
-                    value="USD"
-                    type="radio"
-                  />
-                  <label class="inline" for="curr-usd">USD</label>
-                </td>
-              </tr>
-              <!--Destinație-->
-              <!-- <tr>
-                <td>Destinația donației</td>
-                <td>
-                  <select name="desc" required="">
-                    <option selected value="">Alege destinația donației</option>
-                    <option value="valoarea 1">Donație generală</option>
-                    <option value="valoarea 5">MiniGym</option>
-                    <option value="valoarea 6">Înaltă performanță</option>
-                    <option value="valoarea 8">Academia de Gimnastică</option>
-                    <option value="valoarea 9">Cursuri vocaționale</option>
-                    <option value="valoarea 10">Asigurări medicale</option>
-                    <option value="valoarea 11">Digitalizare</option>
-                    <option value="valoarea 12">Premii top 10 sportivi</option>
-                    <option value="valoarea 13">Tabere de pregătire</option>
-                  </select>
-                </td>
-              </tr> -->
 
-              <tr>
-                <td>Date Personale</td>
-              </tr>
-              <tr>
-                <td>Nume</td>
-                <td><input name="fname" required="" type="text" /></td>
-              </tr>
-              <tr>
-                <td>Prenume</td>
-                <td><input name="lname" required="" type="text" /></td>
-              </tr>
-              <tr></tr>
-              <tr>
-                <td>E-mail</td>
-                <td><input name="email" required="" type="text" /></td>
-              </tr>
-              <tr>
-                <td>Telefon</td>
-                <td><input name="phone" required="" type="text" /></td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="checkbox"
-                    id="public"
-                    name="checkbox"
-                    value="Publicare"
-                  />
-                  <label for="checkbox">
-                    Sunt de acord cu publicarea numelui pe site.</label
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
           <input
             class="btn btn-primary btn-lg"
