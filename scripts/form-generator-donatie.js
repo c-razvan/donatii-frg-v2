@@ -240,19 +240,10 @@ fetch(jsonFilePath)
     section.appendChild(wrapperDonatie);
     document.getElementById("form").appendChild(section);
 
-    function fill(number) {
-      document.getElementById("amount").value = number;
-      document.getElementById("cadru-amount").style.display = "none";
-    }
-    function choose() {
-      document.getElementById("amount").value = 0;
-      document.getElementById("cadru-amount").style.display = "block";
-    }
-
     /////////////////////////////////////////////////////////////////////////////
 
     let destinatieDonatieContainer = document.createElement("div");
-    destinatieDonatieContainer.setAttribute("class", "d-");
+    destinatieDonatieContainer.setAttribute("class", "d-none");
 
     let destinatieDonatieWheel = document.createElement("select");
     destinatieDonatieWheel.setAttribute("name", "desc");
@@ -389,3 +380,12 @@ fetch(jsonFilePath)
   .catch((error) => {
     console.error("Error fetching JSON:", error);
   });
+
+  function fill(number) {
+    document.getElementById("amount").value = number;
+    document.getElementById("cadru-amount").style.display = "none";
+  }
+  function choose() {
+    document.getElementById("amount").value = 0;
+    document.getElementById("cadru-amount").style.display = "block";
+  }
