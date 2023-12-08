@@ -14,17 +14,22 @@
     <link rel="stylesheet" href="../css/buttons-donatii.css" />
     <link rel="stylesheet" href="../css/style-footer.css" />
     <link rel="stylesheet" href="../css/campanii-pagina-campanie.css" />
+    <link rel="stylesheet" href="../css/donatie.css" />
 
     <!-- Scripts -->
     <script defer src="../scripts/mobile-bar.js"></script>
     <script defer src="../scripts/bootstrap.js"></script>
     <script defer src="../scripts/nav-bar-element.js"></script>
     <script defer src="../scripts/botton-generator.js"></script>
-    <script defer src="../scripts/campanie-generator-pagina-campanie.js"></script>
+    <script
+      defer
+      src="../scripts/campanie-generator-pagina-campanie.js"
+    ></script>
     <script defer src="../scripts/footer.js"></script>
 
     <!--Specific Script-->
     <script defer src="./script/inject-content.js"></script>
+    <script defer src="../scripts/form-generator-donatie.js"></script>
   </head>
   <body>
     <!--Donate-->
@@ -39,6 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto list-nav" id="navbar-nav"></ul>
         </div>
+        
       </div>
     </header>
     <!--Main-->
@@ -47,10 +53,31 @@
         <div class="carousel-inner" id="main-container" char="4"></div>
       </div>
     </div>
-    <!--Alte Campanii-->
+    <!--Descriere Campanie-->
     <div class="container mt-3">
       <h4 class="contact-head">Descriere</h4>
       <div id="paragraf"></div>
+    </div>
+    <!--Donatie-->
+    <div class="container mt-4 p-lg-0">
+      <div class="ms-lg-3 doneaza-titlu">
+        <div class="text-start" id="title">
+          <h4 class="contact-head" char="pf">Donează pentru Această Cauză</h4>
+        </div>
+      </div>
+      <form
+        id="form"
+        action="../euplatesc/plateste.php"
+        enctype="multipart/form-data"
+        method="post"
+        name="EuPlatesc"
+      ></form>
+      <div class="euplatesc mb-3 d-flex justify-content-center h-50"><img src="../assets/visa.png" alt="" /></div>
+    </div>
+
+    <!--Alternativ-->
+    <div class="container d-flex flex-wrap p-lg-0 mb-3 justify-content-center">
+      <div class=" my-4 h-auto w-50" id="switch"></div>
     </div>
     <!--Alte Campanii-->
     <div class="container mt-3">

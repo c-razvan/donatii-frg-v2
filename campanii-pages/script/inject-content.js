@@ -70,25 +70,25 @@ fetch(jsonFilePath)
 
       // necesar
 
-      let necesarText = document.createElement("h5");
-      necesarText.innerHTML = "Sumă necesară";
-      necesarText.setAttribute("class","define-button mt-3")
-      textContainer.appendChild(necesarText);
+      // let necesarText = document.createElement("h5");
+      // necesarText.innerHTML = "Sumă necesară";
+      // necesarText.setAttribute("class","define-button mt-3")
+      // textContainer.appendChild(necesarText);
 
-      let necesar = document.createElement("h2");
-      necesar.setAttribute("class","w-100")
-      necesar.innerHTML = jsonData.Campanii[id].necesar;
-      textContainer.appendChild(necesar);
+      // let necesar = document.createElement("h2");
+      // necesar.setAttribute("class","w-100")
+      // necesar.innerHTML = jsonData.Campanii[id].necesar;
+      // textContainer.appendChild(necesar);
 
-      let strânsText = document.createElement("h5");
-      strânsText.setAttribute("class","define-button")
-      strânsText.innerHTML = "Adunat";
-      textContainer.appendChild(strânsText);
+      // let strânsText = document.createElement("h5");
+      // strânsText.setAttribute("class","define-button")
+      // strânsText.innerHTML = "Adunat";
+      // textContainer.appendChild(strânsText);
 
-      let strâns = document.createElement("h2");
-      strâns.setAttribute("class","w-100")
-      strâns.innerHTML = jsonData.Campanii[id].strâns;
-      textContainer.appendChild(strâns);
+      // let strâns = document.createElement("h2");
+      // strâns.setAttribute("class","w-100")
+      // strâns.innerHTML = jsonData.Campanii[id].strâns;
+      // textContainer.appendChild(strâns);
 
       // paragraf
 

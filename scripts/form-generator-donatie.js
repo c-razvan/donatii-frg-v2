@@ -349,10 +349,10 @@ let alternativ = document.createElement("h5");
 let linkFormular = document.createElement("a");
 if (log === "Persoane Fizice") {
   alternativ.innerHTML = "Sunteti Persoană Juridică?";
-  linkFormular.setAttribute("href", "./donatii-persoane-juridice.html");
+  linkFormular.setAttribute("href", `${navSubfolderPath}/doneaza/donatii-persoane-juridice.html`);
 } else {
   alternativ.innerHTML = "Sunteti Persoană Fizică?";
-  linkFormular.setAttribute("href", "./donatii-persoane-fizice.html");
+  linkFormular.setAttribute("href", `${navSubfolderPath}/doneaza/donatii-persoane-fizice.html`);
 }
 linkFormular.setAttribute("class", "define-button text-decoration-none");
 linkFormular.innerHTML = "Apasați aici pentru formular";
