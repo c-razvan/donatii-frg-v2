@@ -262,7 +262,7 @@ boxStyleDate.setAttribute("class", "section datepersonale");
 
 let boxTitleDate = document.createElement("h2");
 boxTitleDate.setAttribute("class", "mb-3");
-boxTitleDate.innerHTML = "Date Personale";
+boxTitleDate.innerHTML = "Date Donator";
 
 // date personale
 let dateleTale = document.createElement("div");
@@ -282,12 +282,10 @@ for (i = 0; i < datePersonaleNecesare.length; i++) {
   let input = document.createElement("input");
   input.setAttribute("class", "form-control");
   input.setAttribute("name", `${datePersonaleNecesare[i][1]}`);
-  if (i !== 3) {
-    input.setAttribute("type", `text`);
-  }
+  input.setAttribute("type", `text`);
   input.setAttribute("id", `${datePersonaleNecesare[i][0]}`);
   input.setAttribute("required", `true`);
-  if (i === 3) {
+  if (datePersonaleNecesare[i][0] === "Telefon") {
     input.setAttribute("type", `number`);
   }
 
