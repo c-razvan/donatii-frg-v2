@@ -6,7 +6,7 @@ let buttons = [
     color: "blue",
     content: {
       linkTitle: ["3,5% - Persoane Fizice", "20% - Persoane Juridice"],
-      links: [`${navSubfolderPath}`, `${navSubfolderPath}`],
+      links: [`${navSubfolderPath}`, `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
     },
   },
   {
