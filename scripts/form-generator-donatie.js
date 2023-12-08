@@ -1,3 +1,5 @@
+let tipDonator = ["Persoana Fizica", "Persoana Juridică"];
+
 let donatii = {
   tipDonatii: {
     title: "Doriți să ne susțineți lunar?",
@@ -19,10 +21,35 @@ let donatii = {
 let datePersonaleNecesare = [
   ["Nume", "fnume"],
   ["Prenume", "lnume"],
+  ["Numele Companiei", ""],
   ["e-Mail", "email"],
   ["Telefon", "phone"],
 ];
 
+// define page
+
+let type =
+  document.getElementById("title").firstElementChild.attributes[1].value;
+let log = "";
+
+if (type === "pf") {
+  console.log("Persoane Fizice");
+  log = "Persoane Fizice";
+} else {
+  console.log("Persoane Juridice");
+  log = "Persoane Juridice";
+}
+
+// title
+
+let title = document.createElement("h6");
+title.setAttribute("class", "d-flex");
+let subtitle = document.createElement("p");
+subtitle.setAttribute("class", "define-button");
+subtitle.innerHTML = `pentru ${log}`;
+
+title.appendChild(subtitle);
+document.getElementById("title").appendChild(title);
 
 // section
 
@@ -216,8 +243,8 @@ destinatieDonatieWheel.setAttribute("required", "yes");
 
 let destinatieDonatie = document.createElement("option");
 destinatieDonatie.setAttribute("selected", "yes");
-destinatieDonatie.setAttribute("value", "Donație Generala - Persoana Fizica");
-destinatieDonatie.innerHTML = "Donație Generala - Persoana Fizica";
+destinatieDonatie.setAttribute("value", `Donație Generala - ${log}`);
+destinatieDonatie.innerHTML = `Donație Generala - ${log}`;
 
 destinatieDonatieWheel.appendChild(destinatieDonatie);
 destinatieDonatieContainer.appendChild(destinatieDonatieWheel);
@@ -244,6 +271,10 @@ dateleTale.setAttribute("class", "mb-3");
 boxStyleDate.appendChild(boxTitleDate);
 
 for (i = 0; i < datePersonaleNecesare.length; i++) {
+  //pj
+  if (log === "Persoane Fizice" && i === 2) {
+   i++;
+  }
   //container
   let container5 = document.createElement("div");
   container5.setAttribute("class", "mb-3");
@@ -313,3 +344,20 @@ buttonDonare.setAttribute("type", "submit");
 
 buttonSection.appendChild(buttonDonare);
 section.appendChild(buttonSection);
+
+// Alternativ
+
+let alternativ = document.createElement("h5");
+let linkFormular = document.createElement("a");
+if (log === "Persoane Fizice") {
+  alternativ.innerHTML = "Sunteti Persoană Juridică?";
+  linkFormular.setAttribute("href", "./donatii-persoane-juridice.html");
+} else {
+  alternativ.innerHTML = "Sunteti Persoană Fizică?";
+  linkFormular.setAttribute("href", "./donatii-persoane-fizice.html");
+}
+linkFormular.setAttribute("class", "define-button text-decoration-none");
+linkFormular.innerHTML = "Apasați aici pentru formular";
+
+document.getElementById("switch").appendChild(alternativ);
+document.getElementById("switch").appendChild(linkFormular);
