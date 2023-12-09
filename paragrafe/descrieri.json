@@ -2,8 +2,8 @@
   "Campanii": [
     {
       "userId": "0",
-      "necesar": "2000 de Lei",
-      "strâns": "0 Lei",
+      "necesar": 20000,
+      "strâns": 0,
       "cardColor": "blue",
       "cardImage": "0.jpeg",
       "cardTitle": "Calendar competitional international si tabere de pregatire",

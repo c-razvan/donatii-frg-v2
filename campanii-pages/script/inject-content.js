@@ -58,7 +58,7 @@ fetch(jsonFilePath)
       // title
 
       let title = document.createElement("h1");
-      title.setAttribute("class","display-text")
+      title.setAttribute("class", "display-text");
       title.innerHTML = jsonData.Campanii[id].cardTitle;
       textContainer.appendChild(title);
 
@@ -68,29 +68,29 @@ fetch(jsonFilePath)
         textContainer.setAttribute("class", "text-container h-25");
       }
 
-      // necesar
+      //necesar
 
-      // let necesarText = document.createElement("h5");
+      // let necesarText = document.createElement("h6");
       // necesarText.innerHTML = "Sumă necesară";
-      // necesarText.setAttribute("class","define-button mt-3")
+      // necesarText.setAttribute("class", "donat-button mt-4 px-4");
       // textContainer.appendChild(necesarText);
 
-      // let necesar = document.createElement("h2");
-      // necesar.setAttribute("class","w-100")
-      // necesar.innerHTML = jsonData.Campanii[id].necesar;
+      // let necesar = document.createElement("h4");
+      // necesar.setAttribute("class", "w-100 ms-2");
+      // necesar.innerHTML = jsonData.Campanii[id].necesar + " de Lei";
       // textContainer.appendChild(necesar);
 
-      // let strânsText = document.createElement("h5");
-      // strânsText.setAttribute("class","define-button")
-      // strânsText.innerHTML = "Adunat";
+      // let strânsText = document.createElement("h6");
+      // strânsText.setAttribute("class", "donat-button mt-1 px-4");
+      // strânsText.innerHTML = "Donat";
       // textContainer.appendChild(strânsText);
 
-      // let strâns = document.createElement("h2");
-      // strâns.setAttribute("class","w-100")
-      // strâns.innerHTML = jsonData.Campanii[id].strâns;
+      // let strâns = document.createElement("h4");
+      // strâns.setAttribute("class", "w-100 ms-2");
+      // strâns.innerHTML = jsonData.Campanii[id].strâns + " Lei";
       // textContainer.appendChild(strâns);
 
-      // paragraf
+      //paragraf;
 
       let t = document.createElement("p");
       t.innerHTML = jsonData.Campanii[id].descriere;

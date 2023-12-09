@@ -15,7 +15,7 @@ fetch(jsonFilePath)
     for (let i = 0; i < jsonData.Campanii.length; i++) {
       //col
       let col = document.createElement("div");
-      col.setAttribute("class", "col-lg-4");
+      col.setAttribute("class", "col-lg-4 col-xl-3");
       col.setAttribute("char", `${jsonData.Campanii[i].userId}`);
 
       // card
