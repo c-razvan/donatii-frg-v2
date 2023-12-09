@@ -13,7 +13,7 @@ let elements = {
     "PF. Alege să direcționezi 3,5% din acesta către gimnastică! ",
     "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! ",
   ],
-  link: ["#campaniile-noastre", "${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html", `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
+  link: ["#campaniile-noastre", `${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html`, `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
 };
 
 for (let i = 0; i < elements.title.length; i++) {
