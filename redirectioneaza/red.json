@@ -1,0 +1,25 @@
+{
+  "Campanii": [
+    {
+      "userId": "0",
+      "necesar": 20000,
+      "strâns": 0,
+      "cardColor": "yellow",
+      "cardImage": "20-lung.png",
+      "cardImageMobil": "20-mobil.png",
+      "cardTitle": "Direcționează 20% Din Impozitul Pe Profit",
+      "cardLink": "0.html",
+      "descriere": "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! Împreună susținem efortul colectiv de reconstrucție a gimnasticii românești. Dacă iubești gimnastica și îți dorești să te alături proiectelor noastre, cu siguranță contribuția ta va aduce un aport pozitiv în procesul de redresare și ocrotire a sportivilor generației de astăzi și de mâine!"
+    },
+    {
+      "userId": "1",
+      "necesar": 20000,
+      "strâns": 0,
+      "cardColor": "blue",
+      "cardImage": "3,5.jpeg",
+      "cardTitle": "Calendar competitional international si tabere de pregatire",
+      "cardLink": "0.html",
+      "descriere": "O experiență cât mai vastă a sportivilor în diverse tabere de pregătire, schimburi de experiență sau participarea la competiții internaționale înseamnă un nivel de performanță mult mai ridicat. Antrenamentele alături de sportivi și antrenori străini și participarea la concursuri internaționale le formează gimnaștilor români un pachet de experiență complet și competitiv, iar nivelul rezultatelor are o tendință crescătoare."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+.main-event {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-container h1 {
+  width: 700px;
+}
+
+
+.line-container-spacer {
+  max-height: 10%;
+  position: relative;
+  right: 0;
+}
+
+.event-line {
+  height: 8px;
+  width: 150px;
+  border-radius: 10px 0 10px 0;
+}
+
+.event-line-blue {
+  background-color: #0083c4;
+}
+
+.event-line-yellow {
+  background-color: #ff9800;
+}
+
+.event-line-red {
+  background-color: #ff1645;
+}
+
+.link-carousel {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  color: white;
+  border-radius: 40px 0 40px 0;
+  height: 25px;
+  width: 150px;
+  padding-top: 1px;
+}
+
+.img-container-mobil{
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .text-container h1 {
+    width: 550px;
+  }
+
+  .text-container p {
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .line-container-spacer {
+    max-height: 10%;
+  }
+
+  .event-line {
+    height: 8px;
+    width: 150px;
+    border-radius: 10px 0 10px 0;
+  }
+
+  .main-event {
+    height: 500px;
+  }
+
+  .text-container h1 {
+    width: 450px;
+  }
+
+  .text-container p {
+    width: 450px;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .main-event {
+    height: 320px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+
+  .img-container-mobil{
+    display: block;
+  }
+
+
+  .img-container{
+    display: none;
+  }
+
+  .text-container h1 {
+    min-height: 70px;
+    width: auto;
+  }
+
+  .text-container p {
+    display: none;
+  }
+
+  .link-carousel {
+    margin-top: 0.75rem;
+    color: white;
+    border-radius: 40px 0 40px 0;
+    height: 25px;
+    width: 150px;
+    padding-top: 1px;
+  }
+
+  .line-container-spacer {
+    right: 0;
+  }
+}
