@@ -1,7 +1,7 @@
 // element define
 
 let elements = {
-  photo: ["Main-Photo.jpeg", "20.png", "20.png"],
+  photo: ["Main-Photo.jpeg", "3,5-mobil.png", "20-mobil.png"],
   line: ["red", "blue", "yellow"],
   title: [
     "Donează Pentru Federația Română de Gimnastică",
@@ -10,10 +10,10 @@ let elements = {
   ],
   paragraf: [
     "Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune. Avem nevoie de tine!",
-    "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 3,5% din acesta către gimnastică! ",
+    "PF. Alege să direcționezi 3,5% din acesta către gimnastică! ",
     "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! ",
   ],
-  link: ["#campaniile-noastre", "red20", `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
+  link: ["#campaniile-noastre", "${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html", `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
 };
 
 for (let i = 0; i < elements.title.length; i++) {

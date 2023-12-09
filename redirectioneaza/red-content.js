@@ -93,9 +93,15 @@ fetch(jsonFilePath)
         "class",
         `link-carousel w-auto px-3 text-white text-decoration-none event-line-${jsonData.Campanii[id].cardColor}`
       );
+      if (jsonData.Campanii[id].userId === "1") {
+        console.log("i work")
+        contract.setAttribute("class","d-none")
+      }
       contract.setAttribute("href", "./spons-frg.docx");
       contract.innerHTML = "Descarcă contractul de sponsorizare";
       document.getElementById("paragraf").appendChild(contract);
+
+
 
       // Append
 
