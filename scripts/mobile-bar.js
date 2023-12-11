@@ -18,6 +18,14 @@ const navSubfolderPath = navScriptPath.replace(
   ""
 );
 
+// ico
+
+let ico = document.createElement("link")
+ico.setAttribute("rel","icon")
+ico.setAttribute("type","image/x-icon")
+ico.setAttribute("href",`${navSubfolderPath}/assets/favicon.ico`)
+document.getElementsByTagName("head")[0].appendChild(ico)
+
 // mobile header
 let container = document.getElementById("donate-button");
 container.setAttribute("class", "donate-button");
