@@ -5,7 +5,7 @@ let elements = {
   line: ["blue", "red", "yellow"],
   title: [
     "Donează Pentru Federația Română de Gimnastică",
-    "Direcționează 3,5% Din Impozitul Pe An",
+    "Direcționează 3,5% Din Impozitul Pe Venit",
     "Direcționează 20% Din Impozitul Pe Profit",
   ],
   paragraf: [
