@@ -18,7 +18,7 @@ fetch(jsonFilePath)
       },
       valDonatie: {
         title: "Suma donației",
-        valori: ["15", "30", "50", "altasuma"],
+        valori: ["30", "50", "100", "altasuma"],
       },
       moneda: {
         title: "Plata în",
@@ -93,7 +93,7 @@ fetch(jsonFilePath)
     t1.innerHTML = donatii.tipDonatii.title;
 
     let container1 = document.createElement("div");
-    container1.setAttribute("class", "ms-3 d-flex");
+    container1.setAttribute("class", "d-flex");
 
     for (i = 0; i < donatii.tipDonatii.valori.length; i++) {
       let cut = donatii.tipDonatii.valori;
@@ -135,6 +135,7 @@ fetch(jsonFilePath)
     containerBig.setAttribute("class", "mx-3 d-block");
 
     let container2 = document.createElement("div");
+    container2.setAttribute("class","row")
 
     for (i = 0; i < donatii.valDonatie.valori.length; i++) {
       let cut = donatii.valDonatie.valori;
@@ -148,12 +149,13 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie px-2 border rounded me-1");
+      label.setAttribute("class", "btn btn-secondary btn-donatie border rounded col me-1");
       label.setAttribute("onclick", `fill(${cut[i]})`);
       label.setAttribute("for", `${cut[i]}`);
       label.innerHTML = `${cut[i]}`;
 
       if (i === 3) {
+        label.setAttribute("class", `btn btn-secondary btn-donatie border rounded col-4 me-1`);
         label.setAttribute("onclick", `choose()`);
         label.innerHTML = `Altă Sumă`;
       }
@@ -198,7 +200,7 @@ fetch(jsonFilePath)
     t4.innerHTML = donatii.moneda.title;
 
     let container3 = document.createElement("div");
-    container3.setAttribute("class", "ms-3 d-flex");
+    container3.setAttribute("class", "d-flex");
 
     for (i = 0; i < donatii.moneda.valori.length; i++) {
       let cut = donatii.moneda.valori;
