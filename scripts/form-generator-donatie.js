@@ -135,7 +135,7 @@ fetch(jsonFilePath)
     containerBig.setAttribute("class", "mx-3 d-block");
 
     let container2 = document.createElement("div");
-    container2.setAttribute("class","row")
+    container2.setAttribute("class","row mx-1")
 
     for (i = 0; i < donatii.valDonatie.valori.length; i++) {
       let cut = donatii.valDonatie.valori;
@@ -185,11 +185,13 @@ fetch(jsonFilePath)
     introducereSuma.appendChild(t3);
     introducereSuma.appendChild(textField);
 
+    let containerLittle = document.createElement("div")
+
     //append
-    containerBig.appendChild(container2);
-    containerBig.appendChild(introducereSuma);
+    containerLittle.appendChild(container2);
+    containerLittle.appendChild(introducereSuma);
     valoareDonatie.appendChild(t2);
-    valoareDonatie.appendChild(containerBig);
+    valoareDonatie.appendChild(containerLittle);
 
     // moneda
 
