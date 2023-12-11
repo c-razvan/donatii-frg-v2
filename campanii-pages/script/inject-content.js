@@ -57,6 +57,10 @@ fetch(jsonFilePath)
 
       // title
 
+      let headTitle = document.createElement("title")
+      headTitle.innerHTML = jsonData.Campanii[id].cardTitle;
+      document.getElementsByTagName("head")[0].appendChild(headTitle)
+
       let title = document.createElement("h1");
       title.setAttribute("class", "display-text");
       title.innerHTML = jsonData.Campanii[id].cardTitle;
