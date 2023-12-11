@@ -27,3 +27,7 @@ bar.href = `${navSubfolderPath}/doneaza/donatii-persoane-fizice.html`;
 bar.innerHTML = "DONEAZĂ";
 
 container.appendChild(bar);
+
+document
+  .getElementById("404")
+  .setAttribute("href", `${navSubfolderPath}/index.html`);
