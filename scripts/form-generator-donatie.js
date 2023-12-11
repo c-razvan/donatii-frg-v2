@@ -109,7 +109,7 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie");
+      label.setAttribute("class", "btn btn-secondary btn-donatie w-50");
       label.setAttribute("for", `${cut[i][1]}`);
       label.innerHTML = `${cut[i][0]}`;
 
@@ -212,7 +212,7 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie");
+      label.setAttribute("class", "btn btn-secondary btn-donatie w-50");
       label.setAttribute("for", `curr-${cut[i]}`);
       label.innerHTML = `${cut[i].toUpperCase()}`;
 
@@ -380,7 +380,7 @@ fetch(jsonFilePath)
     // sestinere
 
     let catreRedirectionari = document.createElement("h5");
-    catreRedirectionari.setAttribute("class","mt-5")
+    catreRedirectionari.setAttribute("class","mt-5 text-center")
     let linkRedirectionari= document.createElement("a");
     if (log === "Persoane Fizice") {
       catreRedirectionari.innerHTML = "Dorți să ne sprijiniți prin redirecționarea impozitului?";
