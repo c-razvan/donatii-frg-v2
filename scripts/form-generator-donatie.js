@@ -327,7 +327,7 @@ fetch(jsonFilePath)
     let termeniSiConditii = document.createElement("label");
     termeniSiConditii.setAttribute("class", "form-check-label");
     termeniSiConditii.setAttribute("for", "termeni");
-    termeniSiConditii.innerHTML = `Plasând o donație sunt de acord cu <a style="text-decoration:none;" href=\"./politica.html\">politica de confidențialitate.</a>`;
+    termeniSiConditii.innerHTML = `Plasând o donație sunt de acord cu <a style="text-decoration:none;" href="${navSubfolderPath}/doneaza/politica.html">politica de confidențialitate.</a>`;
 
     container7.appendChild(termeniSiConditiiCaseta);
     container7.appendChild(termeniSiConditii);
