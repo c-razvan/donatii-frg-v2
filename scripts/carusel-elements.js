@@ -10,7 +10,7 @@ let elements = {
   ],
   paragraf: [
     "Dacă ție îți pasă, atunci cu siguranță lucrurile vor deveni mai bune. Avem nevoie de tine!",
-    "PF. Alege să direcționezi 3,5% din acesta către gimnastică! ",
+    "Efortul și devotamentul gimnastilor sunt o inspirație pentru noi toți. Alege să direcționezi 3,5% din impozitul pe profit pentru performanța lor! ",
     "În luna decembrie, compania ta plătește impozitul pe profit. Alege să direcționezi 20% din acesta către gimnastică! ",
   ],
   link: ["#campaniile-noastre", `${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html`, `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
@@ -28,7 +28,7 @@ for (let i = 0; i < elements.title.length; i++) {
   // carouselCard
 
   carouselCard = document.createElement("div");
-  carouselCard.setAttribute("class", "main-event container p-0 mt-3 ");
+  carouselCard.setAttribute("class", "main-event container p-0 mt-3");
   carouselCard.setAttribute("id", "main-carousel");
 
   // image
