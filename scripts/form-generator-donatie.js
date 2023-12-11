@@ -376,6 +376,32 @@ fetch(jsonFilePath)
 
     document.getElementById("switch").appendChild(alternativ);
     document.getElementById("switch").appendChild(linkFormular);
+
+    // sestinere
+
+    let catreRedirectionari = document.createElement("h5");
+    catreRedirectionari.setAttribute("class","mt-5")
+    let linkRedirectionari= document.createElement("a");
+    if (log === "Persoane Fizice") {
+      catreRedirectionari.innerHTML = "Dorți să ne sprijiniți prin redirecționarea impozitului?";
+      linkRedirectionari.setAttribute(
+        "href",
+        `${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html`
+      );
+    } else {
+      catreRedirectionari.innerHTML = "Reprezentați o companie si doriți să ne susțineți?";
+      linkRedirectionari.setAttribute(
+        "href",
+        `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`
+      );
+    }
+    linkRedirectionari.setAttribute("class", "define-button text-decoration-none mb-3");
+    linkRedirectionari.innerHTML = "Apasați aici pentru campanie";
+
+    document.getElementById("switch").appendChild(catreRedirectionari);
+    document.getElementById("switch").appendChild(linkRedirectionari);
+
+
   })
   .catch((error) => {
     console.error("Error fetching JSON:", error);

@@ -6,7 +6,10 @@ let buttons = [
     color: "blue",
     content: {
       linkTitle: ["3,5% - Persoane Fizice", "20% - Persoane Juridice"],
-      links: [`${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html`, `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`],
+      links: [
+        `${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html`,
+        `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`,
+      ],
     },
   },
   {
@@ -25,7 +28,10 @@ let buttons = [
     color: "red",
     content: {
       linkTitle: ["Sponsorizare în Bani", "Sponsorizare în Bunuri și Servicii"],
-      links: [`${navSubfolderPath}`, `${navSubfolderPath}`],
+      links: [
+        `${navSubfolderPath}/contracte/Contract sponsorizare - Bani.docx`,
+        `${navSubfolderPath}/contracte/Contract sponsorizare - Servicii.docx`,
+      ],
     },
   },
 ];

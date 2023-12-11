@@ -97,7 +97,7 @@ fetch(jsonFilePath)
         console.log("i work")
         contract.setAttribute("class","d-none")
       }
-      contract.setAttribute("href", "./spons-frg.docx");
+      contract.setAttribute("href", "../contracte/Contract sponsorizare - FRG - 20.docx");
       contract.innerHTML = "Descarcă contractul de sponsorizare";
       document.getElementById("paragraf").appendChild(contract);
 
