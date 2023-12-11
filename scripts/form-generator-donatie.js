@@ -109,7 +109,7 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie w-50");
+      label.setAttribute("class", "btn btn-secondary btn-donatie w-50 border rounded me-1");
       label.setAttribute("for", `${cut[i][1]}`);
       label.innerHTML = `${cut[i][0]}`;
 
@@ -148,7 +148,7 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie");
+      label.setAttribute("class", "btn btn-secondary btn-donatie px-2 border rounded me-1");
       label.setAttribute("onclick", `fill(${cut[i]})`);
       label.setAttribute("for", `${cut[i]}`);
       label.innerHTML = `${cut[i]}`;
@@ -212,7 +212,7 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie w-50");
+      label.setAttribute("class", "btn btn-secondary btn-donatie w-50 border rounded me-1");
       label.setAttribute("for", `curr-${cut[i]}`);
       label.innerHTML = `${cut[i].toUpperCase()}`;
 
@@ -234,8 +234,8 @@ fetch(jsonFilePath)
 
     boxStyleDonatie.appendChild(boxTitle);
     boxStyleDonatie.appendChild(donatiaTa);
-    boxStyleDonatie.appendChild(valoareDonatie);
     boxStyleDonatie.appendChild(monedaContainer);
+    boxStyleDonatie.appendChild(valoareDonatie);
     wrapperDonatie.appendChild(boxStyleDonatie);
     section.appendChild(wrapperDonatie);
     document.getElementById("form").appendChild(section);
