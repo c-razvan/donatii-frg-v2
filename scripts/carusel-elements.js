@@ -2,7 +2,7 @@
 
 let elements = {
   photo: ["Main-Photo.jpeg", "3,5-mobil.png", "20-mobil.png"],
-  line: ["red", "blue", "yellow"],
+  line: ["blue", "red", "yellow"],
   title: [
     "Donează Pentru Federația Română de Gimnastică",
     "Direcționează 3,5% Din Impozitul Pe An",
@@ -75,8 +75,13 @@ for (let i = 0; i < elements.title.length; i++) {
 
   // link
   let link = document.createElement("a");
-  link.innerHTML = "Aflați mai multe";
-  link.setAttribute("class", `link-carousel event-line-${elements.line[i]}`);
+  if(i===0){
+    link.innerHTML = "Vedeți Campaniile";
+  } else {
+    link.innerHTML = "Aflați mai multe";
+  }
+
+  link.setAttribute("class", `link-carousel event-line-${elements.line[i]} w-50`);
   if (elements.link[i] !== "") {
     link.setAttribute("href", `${elements.link[i]}`);
     textContainer.appendChild(link);

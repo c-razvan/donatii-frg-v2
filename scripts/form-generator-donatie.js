@@ -195,7 +195,7 @@ fetch(jsonFilePath)
     monedaContainer.setAttribute("class", "mb-3");
 
     let t4 = document.createElement("h6");
-    t4.innerHTML = donatii.valDonatie.title;
+    t4.innerHTML = donatii.moneda.title;
 
     let container3 = document.createElement("div");
     container3.setAttribute("class", "ms-3 d-flex");
