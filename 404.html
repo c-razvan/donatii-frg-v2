@@ -1,30 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0083c4" />
     <title>404 - Pagina Nu a Fost Găsită</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Style -->
-
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/style-nav.css" />
-    <link rel="stylesheet" href="./css/style-main-event.css" />
-    <link rel="stylesheet" href="./css/buttons-donatii.css" />
-    <link rel="stylesheet" href="./css/style-footer.css" />
-
-    <link rel="stylesheet" href="./css/static-pages/despre-noi.css" />
-
     <!-- Scripts -->
     <script defer src="./scripts/mobile-bar.js"></script>
-    <script defer src="./scripts/bootstrap.js"></script>
-    <script defer src="./scripts/nav-bar-element.js"></script>
-    <script defer src="./scripts/botton-generator.js"></script>
-    <script defer src="./scripts/footer.js"></script>
-
-    <script defer src="./scripts/static scripts/echipa-generator.js"></script>
-    <script defer src="./scripts/static scripts/disciplina.js"></script>
+    <!-- Style -->
+    <script defer src="./inject-404.js"></script>
   </head>
   <body>
     <!--Donate-->
@@ -32,7 +17,7 @@
     <!-- NavBar-->
     <header class="navbar navbar-expand-lg">
       <div class="container" id="nav-container">
-        <a class="logo-link" href="index.html" id="logo-container"></a>
+        <a class="logo-link" href="./index.html" id="logo-container"></a>
 
         <button id="collapse-button"></button>
 
@@ -43,12 +28,13 @@
     </header>
 
     <!--EROR-->
-    <div class="container mt-3">
+    <div class="container mt-3 d-flex justify-content-center align-items-center " id="cadru" style="height: 60vh;">
       <div class="despre-noi text-center">
         <div>
           <h1 class="text-center mt-4 display-1">404</h1>
           <h3 class="text-center mb-4">Eroare de Performanță</h3>
         </div>
+        <br>
         <div>
           <p>
             Ops! Am efectuat un salt neprogramat și am aterizat în această
