@@ -1,0 +1,2 @@
+# Redirecționare către o pagină de eroare personalizată
+ErrorDocument 404 /404.html
