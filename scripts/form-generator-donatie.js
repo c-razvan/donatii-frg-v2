@@ -256,7 +256,7 @@ fetch(jsonFilePath)
 
     let destinatieDonatie = document.createElement("option");
     destinatieDonatie.setAttribute("selected", "yes");
-    destinatieDonatie.setAttribute("value", `Donație - ${pentrCeDonez}`);
+    destinatieDonatie.setAttribute("value", `${pentrCeDonez}`);
     destinatieDonatie.innerHTML = `Donație - ${pentrCeDonez}`;
 
     destinatieDonatieWheel.appendChild(destinatieDonatie);

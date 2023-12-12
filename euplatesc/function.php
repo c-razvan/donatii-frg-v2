@@ -38,7 +38,7 @@ function euplatesc_mac($data, $key = NULL)
 			'amount'      => $_POST['amount'],                                                   //suma de plata
 			'curr'        => ($_POST['curr'] ? $_POST['curr'] : 'RON'),                                                   // moneda de plata
 			'invoice_id'  => str_pad(substr(mt_rand(), 0, 7), 7, '0', STR_PAD_LEFT),  // numarul comenzii este generat aleator. inlocuiti cuu seria dumneavoastra
-			'order_desc'  => 'Donatie online-'.$_POST['desc'],                                            //descrierea comenzii
+			'order_desc'  => 'Donatie online - '.$_POST['desc'],                                            //descrierea comenzii
                      // va rog sa nu modificati urmatoarele 3 randuri
 			'merch_id'    => $mid,                                                    // nu modificati
 			'timestamp'   => gmdate("YmdHis"),                                        // nu modificati
