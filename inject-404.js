@@ -10,7 +10,7 @@ for (let i = 0; i<m.length; i++){
     h.appendChild(link)
 }
 
-let j = ["bootstrap","nav-bar-element","botton-generator","footer"]
+let j = ["mobile-bar","bootstrap","nav-bar-element","botton-generator","footer"]
 
 for (let i = 0; i<j.length; i++){
     let link = document.createElement("script")
