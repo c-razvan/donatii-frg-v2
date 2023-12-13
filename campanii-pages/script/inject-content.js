@@ -74,25 +74,25 @@ fetch(jsonFilePath)
 
       //necesar
 
-      let necesarText = document.createElement("h6");
-      necesarText.innerHTML = "Sumă necesară";
-      necesarText.setAttribute("class", "donat-button mt-4 px-4");
-      textContainer.appendChild(necesarText);
+      // let necesarText = document.createElement("h6");
+      // necesarText.innerHTML = "Sumă necesară";
+      // necesarText.setAttribute("class", "donat-button mt-4 px-4");
+      // textContainer.appendChild(necesarText);
 
-      let necesar = document.createElement("h4");
-      necesar.setAttribute("class", "w-100 ms-2");
-      necesar.innerHTML = jsonData.Campanii[id].necesar + " Lei";
-      textContainer.appendChild(necesar);
+      // let necesar = document.createElement("h4");
+      // necesar.setAttribute("class", "w-100 ms-2");
+      // necesar.innerHTML = jsonData.Campanii[id].necesar + " Lei";
+      // textContainer.appendChild(necesar);
 
-      let strânsText = document.createElement("h6");
-      strânsText.setAttribute("class", "donat-button mt-1 px-4");
-      strânsText.innerHTML = "Donat";
-      textContainer.appendChild(strânsText);
+      // let strânsText = document.createElement("h6");
+      // strânsText.setAttribute("class", "donat-button mt-1 px-4");
+      // strânsText.innerHTML = "Donat";
+      // textContainer.appendChild(strânsText);
 
-      let strâns = document.createElement("h4");
-      strâns.setAttribute("class", "w-100 ms-2");
-      strâns.innerHTML = jsonData.Campanii[id].strâns + " Lei";
-      textContainer.appendChild(strâns);
+      // let strâns = document.createElement("h4");
+      // strâns.setAttribute("class", "w-100 ms-2");
+      // strâns.innerHTML = jsonData.Campanii[id].strâns + " Lei";
+      // textContainer.appendChild(strâns);
 
       //paragraf;
 
