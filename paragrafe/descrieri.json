@@ -36,29 +36,9 @@
       "necesar": 20000,
       "strâns": 0,
       "cardImage": "3.jpeg",
-      "cardTitle": "Metode digitale pentru cresterea performantei sportive",
+      "cardTitle": "Siguranța în Sport",
       "cardLink": "3.html",
-      "descriere": "Infrastructura digitală crește performanța sportivă prin optimizarea programelor de antrenament atât pentru sportivi, cât și pentru antrenori. Digitalizarea acestor programe nu înseamnă doar mai puțin timp pierdut pentru echipă, ci și un randament mai bun, o monitorizare mult mai precisă, o serie de rapoarte profunde privind activitatea sportivă și o imagine de ansamblu a ceea ce trebuie îmbunătățit."
-    },
-    {
-      "userId": "4",
-      "cardColor": "blue",
-      "necesar": 20000,
-      "strâns": 0,
-      "cardImage": "4.jpeg",
-      "cardTitle": "Echipa Băieți",
-      "cardLink": "4.html",
-      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
-    },
-    {
-      "userId": "5",
-      "cardColor": "yellow",
-      "necesar": 20000,
-      "strâns": 0,
-      "cardImage": "5.jpeg",
-      "cardTitle": "Echipa Gimnastică Pentru Toți",
-      "cardLink": "5.html",
-      "descriere": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate erat non orci accumsan maximus. Nulla sit amet viverra augue. Nullam ex urna, varius ut finibus sit amet, pretium nec erat. Sed placerat nec magna vel vulputate. Proin vestibulum id nibh ut pellentesque. Aenean id dignissim dolor. Donec consequat elit nec enim molestie pharetra. Fusce semper nisl vitae turpis rhoncus, eget gravida magna blandit. Aenean dapibus lorem non turpis posuere, eget vestibulum sem pulvinar. Vestibulum tempor eu tellus vitae suscipit. Donec volutpat in neque nec sodales. Curabitur commodo aliquet convallis. In velit risus, egestas vel magna in, mollis hendrerit justo."
+      "descriere": "Performanța implică sacrificiu. Riscul de accidentare crește direct proporțional cu nivelul de performanță, toți practicanții gimnasticii de înaltă performanță au nevoie să fie protejați. Prevenirea accidentării și serviciile medicale de recuperare ajută sportivii juniori și seniori să își desfășoare activitatea în condiții optime. Loturile olimpice, naționale și centrele de pregătire olimpică a juniorilor au nevoie de siguranță!"
     }
   ]
 }
