@@ -1,13 +1,11 @@
 const QA = [
   {
     title: "2022",
-    question: ["Descarcă Raport"],
-    nume: ["raport-2022.pptx"],
+    nume: "raport-2022.pptx",
   },
   {
     title: "2023",
-    question: ["Descarcă Raport"],
-    nume: ["raport-2023.pptx"],
+    nume: "",
   },
 ];
 
@@ -25,22 +23,31 @@ for (let h = 0; h < QA.length; h++) {
   //append title
   section.appendChild(sectionTitle);
 
-  for (let j = 0; j < state.question.length; j++) {
+
     let sectionButton = document.createElement("a");
     sectionButton.setAttribute("class", "ms-4 text-decoration-none");
-    sectionButton.setAttribute("href", `./rapoarte/${QA[j].nume}`);
-    sectionButton.innerHTML = state.question[j];
+    sectionButton.setAttribute("href", `./rapoarte/${QA[h].nume}`);
+    sectionButton.innerHTML = "Descarcă Raport";
 
     let panel = document.createElement("div");
     panel.setAttribute("class", "panel mt-3");
 
     let answer = document.createElement("p");
 
+    if (QA[h].nume === "") {
+      sectionButton.setAttribute(
+        "class",
+        "ms-4 text-decoration-none text-dark"
+      );
+      sectionButton.setAttribute("href", "#");
+      sectionButton.innerHTML = "Raport Indisponibil";
+    }
+
     //append
     panel.appendChild(answer);
     section.appendChild(sectionButton);
     section.appendChild(panel);
-  }
+  
 
   document.getElementById("QA").appendChild(section);
 }
