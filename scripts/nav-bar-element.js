@@ -38,6 +38,7 @@ document.getElementById("collapse-button").appendChild(navbarTogglerIcon);
 
 let linkList = [
   "Acasă",
+  "Rapoarte Donații",
   "Știri",
   "Evenimente",
   "Despre Noi",
@@ -56,6 +57,10 @@ for (let i = 0; i < linkList.length; i++) {
 
   if (linkList[i] === "Acasă") {
     link.setAttribute("href", `${navSubfolderPath}/index.html`);
+  }
+
+  if (linkList[i] === "Rapoarte Donații") {
+    link.setAttribute("href", `${navSubfolderPath}/rapoarte-donatii.html`);
   }
 
   if (linkList[i] === "Știri") {

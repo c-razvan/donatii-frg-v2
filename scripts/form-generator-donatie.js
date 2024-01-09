@@ -36,8 +36,7 @@ fetch(jsonFilePath)
 
     // define page
 
-    let typeCampanie =
-      document.getElementById("main-container");
+    let typeCampanie = document.getElementById("main-container");
 
     let type =
       document.getElementById("title").firstElementChild.attributes[1].value;
@@ -51,11 +50,11 @@ fetch(jsonFilePath)
     }
 
     if (typeCampanie !== null) {
-      pentrCeDonez = jsonData.Campanii[typeCampanie.attributes[2].value].cardTitle
+      pentrCeDonez =
+        jsonData.Campanii[typeCampanie.attributes[2].value].cardTitle;
     } else {
       pentrCeDonez = log;
     }
-
 
     // title
 
@@ -103,13 +102,17 @@ fetch(jsonFilePath)
       input.setAttribute("name", "recurent");
       input.setAttribute("type", "radio");
       input.setAttribute("id", `${cut[i][1]}`);
+      input.setAttribute("value", `${cut[i][1]}`);
       if (i === 0) {
-        input.setAttribute("checked", `yes`);
+        input.setAttribute("checked", `checked`);
       }
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie w-50 border rounded me-1");
+      label.setAttribute(
+        "class",
+        "btn btn-secondary btn-donatie w-50 border rounded me-1"
+      );
       label.setAttribute("for", `${cut[i][1]}`);
       label.innerHTML = `${cut[i][0]}`;
 
@@ -134,7 +137,7 @@ fetch(jsonFilePath)
     let containerBig = document.createElement("div");
 
     let container2 = document.createElement("div");
-    container2.setAttribute("class","row row-cols-5 mx-1")
+    container2.setAttribute("class", "row row-cols-5 mx-1");
 
     for (i = 0; i < donatii.valDonatie.valori.length; i++) {
       let cut = donatii.valDonatie.valori;
@@ -148,13 +151,19 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie border rounded col me-1");
+      label.setAttribute(
+        "class",
+        "btn btn-secondary btn-donatie border rounded col me-1"
+      );
       label.setAttribute("onclick", `fill(${cut[i]})`);
       label.setAttribute("for", `${cut[i]}`);
       label.innerHTML = `${cut[i]}`;
 
       if (i === 3) {
-        label.setAttribute("class", `btn btn-secondary btn-donatie border rounded col-4 me-1`);
+        label.setAttribute(
+          "class",
+          `btn btn-secondary btn-donatie border rounded col-4 me-1`
+        );
         label.setAttribute("onclick", `choose()`);
         label.innerHTML = `Altă Sumă`;
       }
@@ -184,7 +193,7 @@ fetch(jsonFilePath)
     introducereSuma.appendChild(t3);
     introducereSuma.appendChild(textField);
 
-    let containerLittle = document.createElement("div")
+    let containerLittle = document.createElement("div");
 
     //append
     containerBig.appendChild(container2);
@@ -217,7 +226,10 @@ fetch(jsonFilePath)
 
       //label
       let label = document.createElement("label");
-      label.setAttribute("class", "btn btn-secondary btn-donatie w-50 border rounded me-1");
+      label.setAttribute(
+        "class",
+        "btn btn-secondary btn-donatie w-50 border rounded me-1"
+      );
       label.setAttribute("for", `curr-${cut[i]}`);
       label.innerHTML = `${cut[i].toUpperCase()}`;
 
@@ -385,38 +397,41 @@ fetch(jsonFilePath)
     // sestinere
 
     let catreRedirectionari = document.createElement("h5");
-    catreRedirectionari.setAttribute("class","mt-5 text-center")
-    let linkRedirectionari= document.createElement("a");
+    catreRedirectionari.setAttribute("class", "mt-5 text-center");
+    let linkRedirectionari = document.createElement("a");
     if (log === "Persoane Fizice") {
-      catreRedirectionari.innerHTML = "Dorți să ne sprijiniți prin redirecționarea impozitului?";
+      catreRedirectionari.innerHTML =
+        "Dorți să ne sprijiniți prin redirecționarea impozitului?";
       linkRedirectionari.setAttribute(
         "href",
         `${navSubfolderPath}/redirectioneaza/redirectionare-3,5.html`
       );
     } else {
-      catreRedirectionari.innerHTML = "Reprezentați o companie si doriți să ne susțineți?";
+      catreRedirectionari.innerHTML =
+        "Reprezentați o companie si doriți să ne susțineți?";
       linkRedirectionari.setAttribute(
         "href",
         `${navSubfolderPath}/redirectioneaza/redirectionare-20.html`
       );
     }
-    linkRedirectionari.setAttribute("class", "define-button text-decoration-none mb-3");
+    linkRedirectionari.setAttribute(
+      "class",
+      "define-button text-decoration-none mb-3"
+    );
     linkRedirectionari.innerHTML = "Apasați aici pentru campanie";
 
     document.getElementById("switch").appendChild(catreRedirectionari);
     document.getElementById("switch").appendChild(linkRedirectionari);
-
-
   })
   .catch((error) => {
     console.error("Error fetching JSON:", error);
   });
 
-  function fill(number) {
-    document.getElementById("amount").value = number;
-    document.getElementById("cadru-amount").style.display = "none";
-  }
-  function choose() {
-    document.getElementById("amount").value = 0;
-    document.getElementById("cadru-amount").style.display = "block";
-  }
+function fill(number) {
+  document.getElementById("amount").value = number;
+  document.getElementById("cadru-amount").style.display = "none";
+}
+function choose() {
+  document.getElementById("amount").value = 0;
+  document.getElementById("cadru-amount").style.display = "block";
+}
